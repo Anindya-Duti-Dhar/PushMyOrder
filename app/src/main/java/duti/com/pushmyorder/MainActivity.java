@@ -85,9 +85,11 @@ public class MainActivity extends BaseActivity<Data> {
 
         if(dt.droidNet.hasConnection()){
             if(!dt.pref.getBoolean("FcmTokenSent")){
+                dt.alert.showProgress(dt.gStr(R.string.getting_ready));
                 new RefreshToken(dt).sendRegistrationToServer(displayFirebaseRegId(), new RefreshToken.onTokenSentListener() {
                     @Override
                     public void onTokenSent(boolean success, String message, String token) {
+                        dt.alert.hideDialog(dt.alert.progress);
                         dt.pref.set("FcmToken", token);
                         if(success){
                             dt.pref.set("FcmTokenSent", true);
@@ -104,7 +106,7 @@ public class MainActivity extends BaseActivity<Data> {
 
     public void InitRecycler() {
         dt.ui.listView.itemList.set(R.id.mRecylerView, visitListArray,
-                R.layout.adapter_push_lsit, R.id.deleteRec, LinearLayout.VERTICAL, R.drawable.ic_action_home);
+                R.layout.adapter_push_lsit, R.id.deleteRec, LinearLayout.VERTICAL, R.drawable.ic_action_room_service);
 
         dt.ui.listView.itemList.setRecyclerViewItemClickListener(new ItemList.onRecyclerViewItemClick() {
             @Override
