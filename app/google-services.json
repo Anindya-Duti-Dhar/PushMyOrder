@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "5550946970",
+    "firebase_url": "https://pushmyorder.firebaseio.com",
+    "project_id": "pushmyorder",
+    "storage_bucket": "pushmyorder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5550946970:android:47ce2d7dca65bbb5",
+        "android_client_info": {
+          "package_name": "duti.com.pushmyorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5550946970-um84672cbnu6uiqi4udog5qkm4j53qak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtXyr60egPmulKK8a2njgKq7zC5yZpJoc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

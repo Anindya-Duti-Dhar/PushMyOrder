@@ -1,0 +1,1656 @@
+<resources>
+    <string name="app_name">Push My Order</string>
+    <string name="default_bangla_font">android2.ttf</string>
+    <string name="app_version">App Version Code</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="registers_home_toolbar">Registers</string>
+    <string name="server_sync_toolbar">Data Sync to Server</string>
+    <string name="data_summery_toolbar">Data Summery</string>
+
+    <string name="my_account">My Account</string>
+    <string name="internet_usages">Internet Usages</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="data_backup">Data Backup</string>
+    <string name="change_password">Change Password</string>
+    <string name="help">Help</string>
+    <string name="old_slum">Old Slum Info</string>
+    <string name="reserve_id">Reserved Id</string>
+    <string name="logout">Logout</string>
+
+    <string name="data_backup_message">Want to e-mail data backup?</string>
+    <string name="logout_warning_message">Want to Logout?</string>
+    <string name="something_wrong">Somethings Wrong</string>
+    <string name="logging_out">Logging Out...</string>
+    <string name="great">Great</string>
+    <string name="logout_success">You Logged out successfully</string>
+    <string name="thanks">Thanks</string>
+
+    <string name="mnchn">MNCHN</string>
+    <string name="shn">SHN</string>
+    <string name="registration">Registration</string>
+    <string name="new_born">Newborn (0-2 Months)</string>
+    <string name="children">Children (2-59 Months)</string>
+    <string name="moni_mix">Monimix Followup</string>
+    <string name="iron_calcium">Iron Calcium Followup</string>
+    <string name="vaccine">Vaccine Followup</string>
+    <string name="community">Community</string>
+    <string name="deworming">Deworming</string>
+    <string name="session">Session</string>
+    <string name="rc_session">RC Session</string>
+    <string name="court_yard">Courtyard</string>
+    <string name="gmp">GMP</string>
+    <string name="ad">Adolescent</string>
+    <string name="ad_followup">Adolescent Follow-up</string>
+    <string name="anc">ANC</string>
+    <string name="pnc">PNC</string>
+
+    <string name="not_identified">Not identified</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="ben_selection">Beneficiary Selection</string>
+    <string name="select">Select</string>
+    <string name="cancel">Cancel</string>
+    <string name="goBack">Go Back</string>
+    <string name="name">Name</string>
+    <string name="id">ID</string>
+    <string name="disqualified_for_service">is disqualified for service</string>
+    <string name="qualified_for_service">is qualified for service</string>
+    <string name="want_to_give_service">Want to give Service?</string>
+    <string name="want_to_see_registration">Want to see Registration Data?</string>
+    <string name="house_no">House No</string>
+    <string name="no_data">No Data</string>
+    <string name="no_ben_selected">No Beneficiary selected</string>
+    <string name="ben_list">Beneficiary List</string>
+
+    <string name="userId">User ID</string>
+    <string name="login_id">Login ID</string>
+    <string name="designation">Designation</string>
+    <string name="organization">Organization</string>
+
+    <string name="no_location">No Location Provider is Available</string>
+
+    <string name="want_to_sync">Want to Sync Data to Server?</string>
+    <string name="sync_syncing_text">Data Syncing...</string>
+    <string name="sync_success_text">Data Synced Successfully</string>
+    <string name="sync_partial_text">Data Syncing partially success</string>
+    <string name="sync_finished_text">Data Syncing completed</string>
+    <string name="sync_failed_text">Data Syncing failed</string>
+    <string name="geo_fetch_warning_text">Want to download location?</string>
+    <string name="crash_sending_stop">Application Error syncing completed</string>
+    <string name="geo_missing">Geo is missing, please download it from server first!</string>
+    <string name="location">Location</string>
+    <string name="geo_code">Code</string>
+    <string name="geo_name">Location Name</string>
+    <string name="enter_meeting_place">Enter Meeting place</string>
+    <string name="download_group_data">Please at first download Group Info</string>
+    <string name="want_to_download_group_data">Want to download Group Info?</string>
+    <string name="download_registration_data">Please at first download Registration data</string>
+    <string name="want_to_download_registration_data">Want to download Registration data?</string>
+    <string name="another_service_running">Another process is running</string>
+    <string name="db_exported">Your Database has been successfully exported as separate file</string>
+    <string name="sorry">Sorry!</string>
+    <string name="ben_already_exist">Ben Already Exist</string>
+    <string name="age_of_ben_already_exist">GMP record for this age has been taken</string>
+    <string name="group_already_exist">Group Already Exist</string>
+    <string name="alert_date_exist">Date Already Exist</string>
+
+    <string name="login_success">Your Login Success</string>
+    <string name="login_failed">Your login failed</string>
+    <string name="validation_error">Wrong Information</string>
+    <string name="login">Login</string>
+    <string name="actual_data">Actual Data   </string>
+    <string name="test_data">Test Data   </string>
+    <string name="password">Password</string>
+    <string name="exit_message">Want to exit from App?</string>
+    <string name="logging_in">Login...</string>
+    <string name="getting_ready">Getting Ready...</string>
+    <string name="crash_message">Application has faced temporary Error</string>
+    <string name="crash">Application Error</string>
+
+    <string name="permission_failed">Your Permission getting failed!</string>
+    <string name="permission_message_twice">To allow permission please go to device settings page</string>
+    <string name="internet_usages_limit_label">Usages against total limit of the Month</string>
+    <string name="internet_usages_today">Internet data used today</string>
+    <string name="internet_usages_1_15">Data (MB) used from 1st to 15th day Report of Selected Month</string>
+    <string name="internet_usages_16_30">Data (MB) used from 16th to 30th day Report of Selected Month</string>
+    <string name="internet_usages_16_29">Data (MB) used from 16th to 29th day Report of Selected Month</string>
+    <string name="internet_usages_16_31">Data (MB) used from 16th to 31st day Report of Selected Month</string>
+
+    <string name="id_download_warning">Want to download ID?</string>
+    <string name="slum_download_warning">Want to download Old Slum Info?</string>
+    <string name="slum_downloaded">Slum Information downloaded</string>
+    <string name="catchment_area_download_success">Old Slum info downloaded successfully</string>
+    <string name="slum_download_again">Download old slum info again</string>
+    <string name="slum_download">Download old slum info</string>
+    <string name="unused_reserved_id">You have unused reserved ID</string>
+    <string name="benIdList">Reserved Beneficiary ID</string>
+    <string name="hhIdList">Reserved Household ID</string>
+    <string name="new_id">Download new ID</string>
+    <string name="send_to_server">Send To Server</string>
+    <string name="sync_50_by_50">Each time 50 Data will sync to server</string>
+    <string name="no_internet_title">Network Error!</string>
+    <string name="no_internet_message">Please Enable Internet Connection</string>
+    <string name="delete">Delete</string>
+    <string name="do_select">Select</string>
+    <string name="do_cancel">Cancel</string>
+    <string name="gps_track_failed">Wait till getting correct location</string>
+    <string name="no_gps_title">Location Service Error!</string>
+    <string name="no_gps_message">Please Enable Location Service</string>
+    <string name="select_correct_data">Select correct data</string>
+    <string name="letter_require">Letter Required</string>
+    <string name="minimum">Minimum</string>
+    <string name="input_home_no">Enter Home No</string>
+    <string name="toilet_exist">Already exist, Select another Number</string>
+
+    <string name="visit_no">Visit No</string>
+    <string name="last_update">Last update</string>
+    <string name="meeting_place">Meeting place</string>
+    <string name="start_date">Start Date</string>
+    <string name="meeting_no">Meeting No</string>
+    <string name="date">Date</string>
+    <string name="subject">Subject</string>
+    <string name="attendance">Attendance</string>
+    <string name="message_no">Message No</string>
+    <string name="weight_kg">Weight (KG)</string>
+    <string name="height_cm">Height (Cm)</string>
+    <string name="muac_cm">MUAC (Cm)</string>
+
+    <!--Registration-->
+    <string name="home_no">Home No</string>
+    <string name="home_name">Home Name</string>
+    <string name="household_id">Household ID</string>
+    <string name="digit_hint">Input Number</string>
+    <string name="name_hint">Input Name</string>
+    <string name="commodities">Commodities</string>
+    <string name="house_condition">House Condition</string>
+    <string name="domestic_animals">Domestic Animals</string>
+    <string name="data_provider_name">Data Provider</string>
+    <string name="data_collection_date">Data collection Date</string>
+    <string name="family_head_name">Head of Family</string>
+    <string name="family_head_prof">Head of Family Profession</string>
+    <string name="father_husband">Father / Husband</string>
+    <string name="family_monthly_income">Family monthly income</string>
+    <string name="family_designation">Family designation</string>
+    <string name="family_language">Family Language</string>
+    <string name="family_total_member">Number of member</string>
+    <string name="household_service">Household Services</string>
+    <string name="cultivate_land">Land of cultivation</string>
+    <string name="own">Own</string>
+    <string name="sublease">Sub-lease</string>
+    <string name="pawned">Pawned</string>
+    <string name="resident">Resident</string>
+    <string name="resident_style">Living Vetter Type</string>
+    <string name="family_member_info">Family Member Information</string>
+    <string name="no_data_message">No Data</string>
+    <string name="unique_id">Unique ID</string>
+    <string name="self">Self</string>
+    <string name="pl_status">PL Status</string>
+    <string name="attendee_name">Attendee Name</string>
+    <string name="first_name">First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="full_name">Full Name</string>
+    <string name="family_head_relation">Relation with Head</string>
+    <string name="guessed">Guessed</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="gender">Gender</string>
+    <string name="is_pregnant">Is Preganant</string>
+    <string name="see_info">See Info</string>
+    <string name="marital_status">Marital status</string>
+    <string name="has_birth_id">Has Birth Certificate</string>
+    <string name="has_autism">Has Autism</string>
+    <string name="educational_qualification">Educational Qualification</string>
+    <string name="go_school">Go to School</string>
+    <string name="school_type">School Type</string>
+    <string name="school_name">School Name</string>
+    <string name="child_labour">Is Child Labour</string>
+    <string name="icdp_service_taken">Take ICDP Service</string>
+    <string name="taken_service_name">Taken services Name</string>
+    <string name="service_org_name">Service providing Org</string>
+    <string name="service_org_other_name">If Other Org</string>
+    <string name="phone_no">Mobile No</string>
+    <string name="active_mobile">Is Mobile Active</string>
+    <string name="want_mobile_sms">Want mobile SMS</string>
+    <string name="sponsor_enrolled">Sponsor Enrolled</string>
+    <string name="other_ngo_engaged">Other NGO engagement</string>
+    <string name="profession">Profession</string>
+    <string name="sponsor_project_code">Sponsor Project Codes</string>
+    <string name="ben_type">Beneficiary Type</string>
+    <string name="nid">National ID</string>
+    <string name="birth_id">Birth Certificate</string>
+    <string name="driving_license">Driving License</string>
+    <string name="passport">Passport</string>
+    <string name="registration_master_toolbar">Household Information</string>
+    <string name="save_master_before">Save Primary Information</string>
+    <string name="update_warning_message">Want to update Information</string>
+    <string name="collect_id">Collect ID</string>
+    <string name="edit_home_message">Want to Edit Home name</string>
+    <string name="no_home_message">Home Name could not found. To Register this home contact with higher autority</string>
+    <string name="no_reserve_id">No more Reserved ID</string>
+    <string name="download_reserve_id">Download reserve ID from server</string>
+    <string name="ok">Ok</string>
+    <string name="save">Save</string>
+    <string name="already_synced">Already data has synced with server</string>
+    <string name="common_warning_title">Attention!</string>
+    <string name="want_to_delete">Want to delete information</string>
+    <string name="common_warning_no">No</string>
+    <string name="successfully_data_inserted">Information saved successfully</string>
+    <string name="duplicate_error">Duplicate Data</string>
+    <string name="registration_hh_id_error">Collect correct Household ID</string>
+    <string name="registration_hh_service_error">Select all household service information</string>
+    <string name="registration_commodities_error">provide commodities information</string>
+    <string name="family_member_no_miss_match">Entered number of family member is not equal to actual number of family member saved against this family</string>
+    <string name="services">Services</string>
+    <string name="registration_age_year_error">Wrong Age (Year)</string>
+    <string name="registration_age_month_error">Wrong Age (Month)</string>
+    <string name="registration_age_day_error">Wrong Age (Day)</string>
+    <string name="registration_mobile_error">write correct number</string>
+    <string name="registration_member_name_error">write name with at least 3 letters</string>
+    <string name="registration_gender_error">Select Gender</string>
+    <string name="registration_ben_type_error">Select Beneficiary type</string>
+    <string name="registration_unique_id_error">Collect correct beneficiary ID</string>
+
+    <string name="sponsor_child_toolbar">Sponsored Child Info</string>
+    <string name="child_id">Child ID</string>
+    <string name="sponsor_id">Sponsor ID</string>
+    <string name="personality">Personality</string>
+    <string name="regular_activities">Regular Activities</string>
+    <string name="school_attendance">School Attendance</string>
+    <string name="favorite_lesson">Favorite Lesson</string>
+    <string name="what_class_reading">What Class Reading</string>
+    <string name="aim_in_life">Aim in Life</string>
+    <string name="favorite_game">Favorite Game</string>
+    <string name="can_walk">Can Walk</string>
+    <string name="can_talk">Can Talk</string>
+    <string name="crawling">Crawling</string>
+    <string name="cause_of_disqualify">Cause of Disqualify</string>
+    <string name="cause_exposed_date">Cause Exposed Date</string>
+
+    <string name="house_search">Search House No</string>
+    <string name="ben_search">Search Beneficiary ID</string>
+    <string name="session_search">Search Session ID</string>
+    <string name="meeting_search">Search Meeting ID</string>
+    <string name="date_search">Search With Date</string>
+    <string name="fetch_warning_text">Want to download old Data?</string>
+    <string name="fetch_fetching_text">Data Downloading...</string>
+    <string name="fetch_request_text">Download old data</string>
+    <string name="sync_request_text">Upload old data</string>
+    <string name="fetch_delete_old_text">Want to download by deleting old data?</string>
+    <string name="fetch_sucess_text">Data downloaded successfully</string>
+    <string name="fetch_finished_text">Data download completed</string>
+    <string name="fetch_failed_text">Data download failed</string>
+    <string name="fetch_partial_text">Data download partially successful</string>
+    <string name="fetch_empty_text">No data from server</string>
+    <string name="fetch_saved_text">Downloaded data saved</string>
+    <string name="fetch_not_saved_text">Downloaded data not saved</string>
+
+    <string name="settings_district">District</string>
+    <string name="settings_upazila">Upazila</string>
+    <string name="settings_union">Union</string>
+    <string name="settings_village">Village</string>
+    <string name="settings_city">City Corporation</string>
+    <string name="settings_pourosava">Pourasava</string>
+    <string name="settings_city_ward">Ward</string>
+    <string name="settings_city_para">Road/Colony</string>
+    <string name="settings_resource_center">Resource Center</string>
+    <string name="settings_primary_school">Primary School</string>
+    <string name="settings_save_all_geo">Save</string>
+
+    <string name="reg_prof_4">Shopkeeper</string>
+    <string name="reg_prof_25">Owns a small business</string>
+    <string name="reg_prof_59">Bus Driver</string>
+    <string name="reg_prof_60">Butcher</string>
+    <string name="reg_prof_6">Carpenter</string>
+    <string name="reg_prof_11">Construction worker</string>
+    <string name="reg_prof_26">Homemaker</string>
+    <string name="reg_prof_61">Miller</string>
+    <string name="reg_prof_15">Shoemaker</string>
+    <string name="reg_prof_58">Truck driver</string>
+    <string name="reg_prof_27">Unemployed due to job scarcity</string>
+    <string name="reg_prof_2">Unskilled laborer</string>
+    <string name="reg_prof_8">Watchman</string>
+    <string name="reg_prof_101">Rickshaw puller</string>
+    <string name="reg_prof_111">Security Worker</string>
+    <string name="reg_prof_107">Garment worker</string>
+    <string name="reg_prof_104">Housewife</string>
+    <string name="reg_prof_53">Animator</string>
+    <string name="reg_prof_22">Office worker</string>
+    <string name="reg_prof_13">Mechanic</string>
+    <string name="reg_prof_1">Skilled laborer</string>
+    <string name="reg_prof_31">Subsistence farmer</string>
+    <string name="reg_prof_7">Driver</string>
+    <string name="reg_prof_17">Electrician</string>
+    <string name="reg_prof_3">farmer</string>
+    <string name="reg_prof_54">Health agent</string>
+    <string name="reg_prof_18">Messenger</string>
+    <string name="reg_prof_52">Midwife</string>
+    <string name="reg_prof_51">Nurse</string>
+    <string name="reg_prof_56">Fisherman</string>
+    <string name="reg_prof_62">Herder</string>
+    <string name="reg_prof_14">Tailor</string>
+    <string name="reg_prof_24">Technician</string>
+    <string name="reg_prof_9">Teacher</string>
+
+    <string name="reg_personality_1">Active</string>
+    <string name="reg_personality_7">Bright</string>
+    <string name="reg_personality_10">Cheerful</string>
+    <string name="reg_personality_14">Confident</string>
+    <string name="reg_personality_505">Cooperative</string>
+    <string name="reg_personality_13">Creative</string>
+    <string name="reg_personality_2">Curious</string>
+    <string name="reg_personality_3">Friendly</string>
+    <string name="reg_personality_17">Happy</string>
+    <string name="reg_personality_24">Hardworking</string>
+    <string name="reg_personality_504">Helpful</string>
+    <string name="reg_personality_520">Kind</string>
+    <string name="reg_personality_19">Outgoing</string>
+    <string name="reg_personality_6">Playful</string>
+    <string name="reg_personality_11">Quiet</string>
+    <string name="reg_personality_510">Sensitive</string>
+    <string name="reg_personality_9">Shy</string>
+    <string name="reg_personality_521">Wise</string>
+
+    <string name="reg_activity_127">Bicycle riding</string>
+    <string name="reg_activity_151">Caring for animals</string>
+    <string name="reg_activity_111">Caring for siblings</string>
+    <string name="reg_activity_189">Cooking</string>
+    <string name="reg_activity_182">Creative writing</string>
+    <string name="reg_activity_533">Cultural activities</string>
+    <string name="reg_activity_120">Dancing</string>
+    <string name="reg_activity_128">Fishing</string>
+    <string name="reg_activity_110">Helping with household chores</string>
+    <string name="reg_activity_121">Listening to music</string>
+    <string name="reg_activity_145">Listening to stories</string>
+    <string name="reg_activity_525">Outdoor activities</string>
+    <string name="reg_activity_108">Participating in sports</string>
+    <string name="reg_activity_125">Playing an instrument</string>
+    <string name="reg_activity_115">Playing with friends</string>
+    <string name="reg_activity_140">Playing with toys</string>
+    <string name="reg_activity_118">Reading</string>
+    <string name="reg_activity_190">Sewing</string>
+    <string name="reg_activity_137">Singing</string>
+    <string name="reg_activity_131">Studying</string>
+    <string name="reg_activity_109">Working in the fields</string>
+
+    <string name="reg_attendance_28">Does not attend</string>
+    <string name="reg_attendance_27">Is too young to attend</string>
+    <string name="reg_attendance_26">Presently attends</string>
+
+    <string name="reg_subject_73">Agriculture</string>
+    <string name="reg_subject_41">Art</string>
+    <string name="reg_subject_31">Bangla</string>
+    <string name="reg_subject_50">Computers</string>
+    <string name="reg_subject_34">English</string>
+    <string name="reg_subject_40">History</string>
+    <string name="reg_subject_33">Mathematics</string>
+    <string name="reg_subject_42">Music</string>
+    <string name="reg_subject_43">Physical education</string>
+    <string name="reg_subject_71">Religious Education</string>
+    <string name="reg_subject_35">Science</string>
+    <string name="reg_subject_36">Social Science</string>
+
+    <string name="reg_class_94">Preschool</string>
+    <string name="reg_class_93">Kindergarten</string>
+    <string name="reg_class_81">First grad</string>
+    <string name="reg_class_82">Second grade</string>
+    <string name="reg_class_83">Third grade</string>
+    <string name="reg_class_84">Fourth grade</string>
+    <string name="reg_class_85">Fifth grade</string>
+    <string name="reg_class_86">Sixth grade</string>
+    <string name="reg_class_87">Seventh grade</string>
+    <string name="reg_class_88">Eighth grade</string>
+    <string name="reg_class_89">Ninth grade</string>
+    <string name="reg_class_90">Tenth grade</string>
+    <string name="reg_class_91">Eleventh grade</string>
+    <string name="reg_class_92">Twelfth grade</string>
+    <string name="reg_class_105">Special education</string>
+
+    <string name="reg_ambition_238">Architect</string>
+    <string name="reg_ambition_202">Artist</string>
+    <string name="reg_ambition_246">Astronomer</string>
+    <string name="reg_ambition_232">Athlete</string>
+    <string name="reg_ambition_248">Bank employee</string>
+    <string name="reg_ambition_249">Beauty queen</string>
+    <string name="reg_ambition_233">Business person</string>
+    <string name="reg_ambition_205">Chef</string>
+    <string name="reg_ambition_251">Computer technician</string>
+    <string name="reg_ambition_206">Construction worker</string>
+    <string name="reg_ambition_208">Dancer</string>
+    <string name="reg_ambition_209">Doctor</string>
+    <string name="reg_ambition_231">Dress maker</string>
+    <string name="reg_ambition_210">Driver</string>
+    <string name="reg_ambition_252">Electrician</string>
+    <string name="reg_ambition_211">Engineer</string>
+    <string name="reg_ambition_212">Farmer</string>
+    <string name="reg_ambition_213">Fire fighter</string>
+    <string name="reg_ambition_229">Lawyer</string>
+    <string name="reg_ambition_255">Model</string>
+    <string name="reg_ambition_215">Musician</string>
+    <string name="reg_ambition_216">Nun</string>
+    <string name="reg_ambition_217">Nurse</string>
+    <string name="reg_ambition_239">Office worker</string>
+    <string name="reg_ambition_218">Pilot</string>
+    <string name="reg_ambition_219">Police officer</string>
+    <string name="reg_ambition_220">Politician</string>
+    <string name="reg_ambition_256">Scientist</string>
+    <string name="reg_ambition_223">Soldier</string>
+    <string name="reg_ambition_257">Superhero</string>
+    <string name="reg_ambition_224">Tailor</string>
+    <string name="reg_ambition_225">Teacher</string>
+    <string name="reg_ambition_258">Welder</string>
+
+    <string name="reg_game_815">Acting</string>
+    <string name="reg_game_817">Ball games</string>
+    <string name="reg_game_833">Basketball</string>
+    <string name="reg_game_818">Bicycle riding</string>
+    <string name="reg_game_834">Blocks</string>
+    <string name="reg_game_819">Board games</string>
+    <string name="reg_game_820">Cards</string>
+    <string name="reg_game_821">Cricket</string>
+    <string name="reg_game_822">Dolls</string>
+    <string name="reg_game_823">Football</string>
+    <string name="reg_game_824">Hide and seek</string>
+    <string name="reg_game_826">Jump rope</string>
+    <string name="reg_game_827">Kabaddi</string>
+    <string name="reg_game_828">Kites</string>
+    <string name="reg_game_829">Kutkut</string>
+    <string name="reg_game_831">Marbles</string>
+    <string name="reg_game_801">Musical instruments</string>
+    <string name="reg_game_802">Netball</string>
+    <string name="reg_game_803">Outdoor games</string>
+    <string name="reg_game_804">Ping pong</string>
+    <string name="reg_game_806">Singing</string>
+    <string name="reg_game_809">Swimming</string>
+    <string name="reg_game_832">Tennis</string>
+    <string name="reg_game_813">Toys</string>
+    <string name="reg_game_814">Volleyball</string>
+
+    <string name="reg_income_1">Bellow 5000 BDT</string>
+    <string name="reg_income_2">5001-7000 BDT</string>
+    <string name="reg_income_3">7001-9000 BDT</string>
+    <string name="reg_income_4">Above 9001 BDT</string>
+
+    <string name="other">Other</string>
+    <string name="khas">Demesne</string>
+
+    <string name="stable">Permanent</string>
+    <string name="unstable">Temporary</string>
+
+    <string name="reg_house_1">Wooden frame home</string>
+    <string name="reg_house_3">Apartment</string>
+    <string name="reg_house_46">Concrete home</string>
+    <string name="reg_house_47">Home with a tin roof</string>
+    <string name="reg_house_101">Home made with complete tin</string>
+    <string name="reg_house_48">Home with a grass roof</string>
+    <string name="reg_house_49">Home made of soil</string>
+
+    <string name="reg_sponsor_status_901">Moved</string>
+    <string name="reg_sponsor_status_902">Married</string>
+    <string name="reg_sponsor_status_903">Deceased</string>
+    <string name="reg_sponsor_status_904">Not Participating</string>
+    <string name="reg_sponsor_status_906">Over Age</string>
+    <string name="reg_sponsor_status_908">Parental Refusal</string>
+    <string name="reg_sponsor_status_909">Child Refusal</string>
+    <string name="reg_sponsor_status_920">Double Enrollment</string>
+    <string name="reg_sponsor_status_922">Max age for Assignment</string>
+
+    <string name="reg_relation_1">Family head</string>
+    <string name="reg_relation_2">Family head wife</string>
+    <string name="reg_relation_3">Family head husband</string>
+    <string name="reg_relation_4">Son</string>
+    <string name="reg_relation_5">Daughter</string>
+    <string name="reg_relation_6">Father</string>
+    <string name="reg_relation_7">Mother</string>
+    <string name="reg_relation_8">Daughter-in-law/Son-in-law</string>
+    <string name="reg_relation_9">Brother</string>
+    <string name="reg_relation_10">Sister</string>
+    <string name="reg_relation_11">Father-in-law/Mother-in-law</string>
+    <string name="reg_relation_12">Nephew/Niece</string>
+    <string name="reg_relation_13">Grandfather/দাদি/নানা/নানি</string>
+    <string name="reg_relation_14">নাতি/নাতনি</string>
+    <string name="reg_relation_15">ননদ/দেবর/শ্যালক</string>
+    <string name="reg_relation_16">ভাতৃবধু</string>
+
+    <string name="never_gone">Never Gone</string>
+
+    <string name="married">Married</string>
+    <string name="unmarried">Unmarried</string>
+
+    <string name="bengali">Bengali</string>
+    <string name="urdu">Urdu</string>
+
+    <string name="eligible">Eligible</string>
+    <string name="not_eligible">Not eligible</string>
+
+    <string name="reg_education_1">Illiterate</string>
+    <string name="reg_education_2">Pre-primary</string>
+    <string name="reg_education_3">literate</string>
+    <string name="reg_education_4">Primary</string>
+    <string name="reg_education_5">Secondary</string>
+    <string name="reg_education_6">Higher secondary or higher than that</string>
+
+    <string name="reg_school_1">Govt secondary school</string>
+    <string name="reg_school_321">Govt primary school</string>
+    <string name="reg_school_3">Non-govt school</string>
+    <string name="reg_school_4">NGO school</string>
+    <string name="reg_school_5">Madrasha</string>
+    <string name="reg_school_328">College</string>
+    <string name="reg_school_343">Preparatory</string>
+    <string name="reg_school_324">Pre-primary</string>
+
+    <string name="mss">MSS</string>
+    <string name="other_organization">Other Organization</string>
+    <string name="both">Both</string>
+
+    <string name="kishor_with_age">Adolescent Boy (5-19 Years)</string>
+    <string name="kishori_with_age">Adolescent Girl (5-19 Years)</string>
+    <string name="adult_male">Adult Male</string>
+    <string name="adult_female">Adult Female</string>
+
+    <string name="nari_moitri">Nari Moitri</string>
+
+    <string name="reg_commodities_1">Radio</string>
+    <string name="reg_commodities_2">Cassette</string>
+    <string name="reg_commodities_3">TV (with Dish cable)</string>
+    <string name="reg_commodities_4">TV (with out Dish cable)</string>
+    <string name="reg_commodities_5">Mobile</string>
+    <string name="reg_commodities_6">Toll booth</string>
+    <string name="reg_commodities_7">Bed</string>
+    <string name="reg_commodities_8">Rack</string>
+    <string name="reg_commodities_9">Chair</string>
+    <string name="reg_commodities_10">Table</string>
+    <string name="reg_commodities_11">Dressing Table</string>
+    <string name="reg_commodities_12">Sofa</string>
+    <string name="reg_commodities_13">Showcase</string>
+    <string name="reg_commodities_14">Bicycle</string>
+    <string name="reg_commodities_15">Motor Bike</string>
+    <string name="reg_commodities_16">Rickshaw</string>
+    <string name="reg_commodities_17">Van</string>
+    <string name="reg_commodities_18">Nosimon-Korimon</string>
+    <string name="reg_commodities_19">Tractor</string>
+    <string name="reg_commodities_20">Cart</string>
+
+    <!--Hint-->
+    <string name="hint_answer">Give Answer</string>
+    <string name="hint_auto">Auto Answer</string>
+    <string name="hint_select">Select</string>
+    <string name="hint_number">Input Number</string>
+    <string name="hint_general_info">General Information</string>
+    <string name="hint_disease_symptom_test">Disease Symptom And Tests</string>
+    <string name="hint_visit_number">CO Visit No: </string>
+    <string name="hint_gmp_list">GMP List</string>
+    <string name="hint_date">DD-MM-YYYY</string>
+    <string name="hint_session_list">Beneficiary List</string>
+    <string name="hint_anc_visit_info">ANC Visit Information</string>
+    <string name="hint_tt_info">TT Information</string>
+    <string name="hint_pnc_visit_info">PNC Visit Information</string>
+    <string name="hint_previous_referral">Previous Referral</string>
+    <string name="hint_current_referral">Current Referral</string>
+    <string name="hospital">Hospital</string>
+    <string name="institute">Institute</string>
+    <string name="does_go_school">Does Go to School</string>
+    <string name="dewDoseYear">Dose Year</string>
+    <string name="hint_visit_info">Visit Information</string>
+    <string name="hint_pregnancy_info">Pregnancy Information</string>
+    <string name="hint_selected_year">Selected Year</string>
+    <string name="hint_year_picker">Year Picker</string>
+
+    <!--ChildrenCounselingList-->
+    <string name="pnc_newborn_counseling10">Additional Improvements (Monimix)</string>
+    <string name="pnc_newborn_counseling11">Growth Monitoring And Promotion</string>
+
+
+    <!--Validation Messages-->
+    <string name="validation_ben_id">Enter Beneficiary Id</string>
+    <string name="validation_lmp">Enter LMP Date</string>
+    <string name="validation_temperature">Enter Temperature</string>
+    <string name="validation_heart_rate">Enter Heart Rate</string>
+    <string name="validation_bloodpressure">Enter BLood Pressure</string>
+    <string name="validation_caregiver_name">Enter Caregiver Name</string>
+    <string name="validation_message_number">Enter Message Number</string>
+    <string name="validation_enter">Enter</string>
+    <string name="validation_weight">Enter Weight</string>
+    <string name="validation_height">Enter Height</string>
+    <string name="validation_muac">Enter Muac</string>
+
+    <string name="list_beneficiaries_present_in_session">Beneficiaries Present In Session</string>
+
+    <!--MNCHN-->
+    <string name="work_area">Work Area</string>
+
+    <string name="ancBenId">Beneficiary ID</string>
+    <string name="ancBenName">Beneficiary Name</string>
+    <string name="ancDateOfBirth">Date Of Birth</string>
+    <string name="ancAge">Age</string>
+    <string name="ancRegistrationDate">Registration Date</string>
+    <string name="ancVisitDate">CO Visit Date</string>
+    <string name="ancNumberOfPregnancy">Parity</string>
+    <string name="ancLmp">Lmp</string>
+    <string name="ancEdd">Edd</string>
+    <string name="ancTemperature">Temperature (°F)</string>
+    <string name="ancHeartRate">Heart Rate (Per Min)</string>
+    <string name="ancBloodPressure">Blood Pressure</string>
+    <string name="ancSwelling">Swelling</string>
+    <string name="ancPaleEyelids">Paleness inside lower Eyelids</string>
+    <string name="ancBabyMovingFeel">Baby Moving Feel</string>
+    <string name="ancJaundice">Jaundice</string>
+    <string name="ancTTTerm">Number</string>
+    <string name="ancTTDate">Date</string>
+    <string name="ancTTVisitWhere">Place</string>
+    <string name="ancAncVisitTerm">Visit No</string>
+    <string name="ancAncVisitDate">Visit Date</string>
+    <string name="ancAncVisitWhere">Place of Visit</string>
+    <string name="ancPregnancyTest">Pregnancy Test</string>
+    <string name="ancMiscarriage">Previous Miscarriage</string>
+    <string name="ancReferralHospital">Reffered Hospital</string>
+    <string name="ancReferralInstitute">Reffered Institute</string>
+    <string name="ancReferralReason">Reason</string>
+    <string name="ancReferralHospitalBefore">Previoulsy Reffered Hospital</string>
+    <string name="ancReferralInstituteBefore">Previoulsy Reffered Before</string>
+    <string name="ancReferralReasonBefore">Reason</string>
+    <string name="ancRemarks">Remarks</string>
+    <string name="ancVisitNo">CO Visit Number</string>
+
+    <!--ANC Spinner-->
+    <string name="first">First</string>
+    <string name="second">Second</string>
+    <string name="third">Third</string>
+    <string name="fourth">Fourth</string>
+    <string name="fifth">Fifth</string>
+    <string name="sixth">Sixth</string>
+    <string name="seventh">Seventh</string>
+    <string name="eighth">Eighth</string>
+    <string name="ninth">Ninth</string>
+    <string name="tenth">Tenth</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="not_applicable">Not Applicable</string>
+
+    <string name="tt1">TT 1</string>
+    <string name="tt2">TT 2</string>
+    <string name="tt3">TT 3</string>
+    <string name="tt4">TT 4</string>
+    <string name="tt5">TT 5</string>
+
+    <string name="suddenly_happen">Happened suddenly</string>
+    <string name="not_happen">Not happened</string>
+    <string name="happen_at_hospital">Happened at hospital</string>
+
+    <string name="anc_visit_0">Does not pay visit</string>
+    <string name="anc_visit_1">ANC visit 1</string>
+    <string name="anc_visit_2">ANC visit 2</string>
+    <string name="anc_visit_3">ANC visit 3</string>
+    <string name="anc_visit_4">ANC visit 4</string>
+    <string name="anc_visit_5">ANC visit 5</string>
+    <string name="anc_visit_6">ANC visit 6</string>
+
+    <string name="ref_hospital_0">Need not to refer</string>
+    <string name="ref_hospital_1">NGO Hospital</string>
+    <string name="ref_hospital_2">Govt Hospital</string>
+    <string name="ref_hospital_3">Private Clinic</string>
+    <string name="ref_hospital_4">Satellite Clinic</string>
+
+    <string name="ref_Institute_ngo_1">Sun smile Clinic</string>
+    <string name="ref_Institute_ngo_2">UPHCSDP Clinic</string>
+    <string name="ref_Institute_ngo_3">Mari Stops</string>
+    <string name="ref_Institute_ngo_4">BRAC</string>
+    <string name="others">Others</string>
+
+    <string name="ref_Institute_govt_1">Shishu Hospital</string>
+    <string name="ref_Institute_govt_2">Shohid Sarwardi Hospital</string>
+    <string name="ref_Institute_govt_3">Mohhamdpur Fertility Services and Training Center (MFSTC)</string>
+    <string name="ref_Institute_govt_4">Dhaka Medical College</string>
+    <string name="ref_Institute_govt_5">Sir Salimullah Medical College and Mitford Hospital</string>
+
+    <string name="ref_Institute_private_1">Bangladesh Medical College Hospital</string>
+    <string name="ref_Institute_private_2">Shikder Medical College Hospital</string>
+
+    <string name="ref_reason_anc_1">Antenatal Care</string>
+    <string name="danger_sign">Danger sign</string>
+    <string name="tt_vaccine">TT Vaccine</string>
+    <string name="no_reason">No reason</string>
+
+    <!-- ANC ListCheckBox-->
+    <string name="counseling_support">Counseling and Support</string>
+    <string name="refer_info">Refer Info</string>
+
+    <string name="counseling">Counseling</string>
+    <string name="training_support">Training and Support</string>
+
+    <string name="anc_danger_sign_title">Today danger sign</string>
+    <string name="anc_counseling_title">Counseling</string>
+    <string name="anc_training_support_title">Today provided training and support</string>
+
+    <string name="anc_danger_sign_1">Bleeding in Vagina</string>
+    <string name="anc_danger_sign_2">Severe headaches and blurred vision</string>
+    <string name="anc_danger_sign_3">More than 100.40F / 380C fever for 3 days or more</string>
+    <string name="anc_danger_sign_4">Preventive or delayed delivery or risk of child in the womb</string>
+    <string name="anc_danger_sign_5">Seizure</string>
+
+    <string name="anc_Counseling_1">Pregnancy Service (ANC) and Regular Follow-Up</string>
+    <string name="anc_Counseling_2">Tetanus Antidote/Remedial</string>
+    <string name="anc_Counseling_3">Healthy Food and Nutrition</string>
+    <string name="anc_Counseling_4">Iron and Folic Acid</string>
+    <string name="anc_Counseling_5">Acquired Calcium</string>
+    <string name="anc_Counseling_6">Rest and Other Works</string>
+    <string name="anc_Counseling_7">Personal Cleanliness and Self-Care</string>
+    <string name="anc_Counseling_8">Immediate and Urgent Care of The Newborn</string>
+    <string name="anc_Counseling_9">Breastfeeding</string>
+    <string name="anc_Counseling_10">Post-Delivery Services</string>
+    <string name="anc_Counseling_11">Post-Delivery Family Planning and Birth Anniversary</string>
+    <string name="anc_Counseling_12">Showing Video</string>
+    <string name="anc_Counseling_13">Hand Wash with Soap</string>
+    <string name="anc_Counseling_14">Boil Drinking Water at least 20 minutes</string>
+
+    <string name="pnc_support_1">Saaf Katha has been given</string>
+    <string name="pnc_support_2">Child development card has been given</string>
+    <string name="pnc_support_3">WASH card has been given and got 2 information</string>
+    <string name="pnc_support_4">7.1% of the chlorhexidein bottle has been given</string>
+
+
+    <!--PNC-->
+    <!--Screen-->
+
+    <string name="pnc_info_general">General Information</string>
+    <string name="pnc_info_observation">Observation</string>
+    <string name="pnc_info_delivery">Delivery Information</string>
+    <string name="pnc_info_counseling">Counseling and Support</string>
+    <string name="pnc_info_referral">Referral</string>
+
+    <string name="pncBenId">Beneficiary ID</string>
+    <string name="pncBenName">Beneficiary Name</string>
+    <string name="pncDateOfBirth">Date Of Birth</string>
+    <string name="pncAge">Age</string>
+    <string name="pncRegistrationDate">Registration Date</string>
+    <string name="pncVisitDate">CO Visit Date</string>
+    <string name="pncTemperature">Temperature (°F)</string>
+    <string name="pncHeartRate">Heart Rate (Per Min)</string>
+    <string name="pncBloodPressure">Blood Pressure</string>
+    <string name="pncSwelling">Swelling (Pitting Edema)</string>
+    <string name="pncPaleEyelids">Paleness inside lower Eyelids</string>
+    <string name="pncDeliveryDate">Date</string>
+    <string name="pncDeliveryPlace">Place</string>
+    <string name="pncDeliveryResult">Result</string>
+    <string name="pncDeliveryAttendant">Attendant</string>
+    <string name="pncPncVisitTerm">Visit NO</string>
+    <string name="pncPncVisitDate">Visit Date</string>
+    <string name="pncPncVisitWhere">Place of Visit</string>
+    <string name="pncReferralHospital">Referred Hospital</string>
+    <string name="pncReferralInstitute">Referred Institute</string>
+    <string name="pncReferralReason">Reason</string>
+    <string name="pncReferralHospitalBefore">Previously Referred Hospital</string>
+    <string name="pncReferralInstituteBefore">Previously Referred Institute</string>
+    <string name="pncReferralReasonBefore">Reason</string>
+    <string name="pncRemarks">Remarks</string>
+    <string name="pncVisitNo">CO Visit No</string>
+
+    <!--Dagger, Counciling, Support-->
+    <string name="pnc_list_item_button1">Danger Signs During Delivery</string>
+    <string name="pnc_list_item_button2">Danger Signs After Delivery</string>
+    <string name="pnc_list_item_button3">Counseling</string>
+    <string name="pnc_list_item_button4">Newborn Counseling</string>
+    <string name="pnc_list_item_button5">Teaching and Support</string>
+
+    <string name="pnc_list_item_title1">Danger Signs During Delivery?</string>
+    <string name="pnc_list_item_title2">Danger Signs After Delivery?</string>
+    <string name="pnc_list_item_title3">Counseling</string>
+    <string name="pnc_list_item_title4">Newborn Counseling</string>
+    <string name="pnc_list_item_title5">Teaching and support Today</string>
+
+    <string name="pnc_danger_before1">Heavy Bleeding</string>
+    <string name="pnc_danger_before2">Obstructed Labor</string>
+    <string name="pnc_danger_before3">Prolonged labor more than 12 Hours</string>
+    <string name="pnc_danger_before4">Blurring of Vision</string>
+    <string name="pnc_danger_before5">Convulsions/Fit</string>
+
+    <string name="pnc_danger_after1">Profuse vaginal bleeding or vaginal bleeding that increases</string>
+    <string name="pnc_danger_after2">Moderate to severe hypertension (140/90 or above)</string>
+    <string name="pnc_danger_after3">Convulsions/Fit</string>
+    <string name="pnc_danger_after4">Severe abdominal pain with foul smelling discharge with fever</string>
+    <string name="pnc_danger_after5">Severe pain in chest or shortness of breath</string>
+    <string name="pnc_danger_after6">Urine and/or feces leaking out of the vagina</string>
+    <string name="pnc_danger_after7">Something coming out of the vagina</string>
+
+    <string name="pnc_counseling1">Danger Signs</string>
+    <string name="pnc_counseling2">Breastfeeding</string>
+    <string name="pnc_counseling3">Maternal diet and supplementation</string>
+    <string name="pnc_counseling4">Rest and other activities</string>
+    <string name="pnc_counseling5">Maintain personal hygiene</string>
+    <string name="pnc_counseling6">Bladder and Bowel care</string>
+    <string name="pnc_counseling7">Postnatal Care (PNC) visit at health facility</string>
+    <string name="pnc_counseling8">Postpartum family planning</string>
+    <string name="pnc_counseling9">Hand washing with Soap</string>
+    <string name="pnc_counseling10">Boiling water before Drinking</string>
+
+    <string name="pnc_newborn_counseling1">Danger Signs Counseling</string>
+    <string name="pnc_newborn_counseling2">Exclusive Breastfeeding up to 6 months</string>
+    <string name="pnc_newborn_counseling3">Supplemental Feeding after 6 months</string>
+    <string name="pnc_newborn_counseling4">Immunization</string>
+    <string name="pnc_newborn_counseling5">Postnatal Visit</string>
+    <string name="pnc_newborn_counseling6">Video Display</string>
+    <string name="pnc_newborn_counseling7">Child Protection Messages</string>
+    <string name="pnc_newborn_counseling8">Handwashing with soap</string>
+    <string name="pnc_newborn_counseling9">Boiling water for 20 minutes before drinking</string>
+
+
+    <!--Spinner-->
+    <string name="pnc_visit_1">PNC visit 1</string>
+    <string name="pnc_visit_2">PNC visit 2</string>
+    <string name="pnc_visit_3">PNC visit 3</string>
+    <string name="pnc_visit_4">PNC visit 4</string>
+    <string name="pnc_visit_5">PNC visit 5</string>
+    <string name="pnc_visit_6">PNC visit 6</string>
+
+    <string name="pnc_delivery_place1">Govt. Hospital</string>
+    <string name="pnc_delivery_place2">NGO Hospital</string>
+    <string name="pnc_delivery_place3">Private Clinic/Hospital</string>
+    <string name="pnc_delivery_place4">Delivery at Home</string>
+
+    <string name="pnc_delivery_attendant1">Doctor</string>
+    <string name="pnc_delivery_attendant2">Nurse</string>
+    <string name="pnc_delivery_attendant3">Specialized Birth Assistance (SBA)/Hospital</string>
+    <string name="pnc_delivery_attendant4">Traditional and Untrained Birth Assistance (TBA)</string>
+    <string name="pnc_delivery_attendant5">Relative or Family Member</string>
+    <string name="pnc_delivery_attendant6">Other</string>
+
+    <string name="pnc_delivery_result1">Boy</string>
+    <string name="pnc_delivery_result2">Girl</string>
+    <string name="pnc_delivery_result3">Dead</string>
+
+    <string name="pnc_refer_reason1">No Reason</string>
+    <string name="pnc_refer_reason2">Post-delivery Care</string>
+    <string name="pnc_refer_reason3">Post-delivery Family Planning</string>
+    <string name="pnc_refer_reason4">Other Disease</string>
+
+    <!--Newborn-->
+
+    <string name="new_info_general">General Information</string>
+    <string name="new_info_observation">Observation</string>
+    <string name="new_info_counseling">Counseling and Support</string>
+    <string name="new_info_referral">Referral</string>
+
+    <string name="newBenId">Beneficiary ID</string>
+    <string name="newBenName">Beneficiary Name</string>
+    <string name="newDateOfBirth">Date Of Birth</string>
+    <string name="newAge">Age</string>
+    <string name="newRegistrationDate">Registration Date</string>
+    <string name="newVisitDate">CO Visit Date</string>
+    <string name="newCoughing">Does the child have cough?</string>
+    <string name="newRespiratory">Respiratory Rate</string>
+    <string name="newChestDrawing">Child chest shows indrawing</string>
+    <string name="newWheezing">Does the child wheezes?</string>
+    <string name="newVomiting">Vomiting?</string>
+    <string name="newDiarrhea">Does the child has Diarrhea (more than 3 times/day)?</string>
+    <string name="newDrinking">Does the child takes liquid food or is breastfed?</string>
+    <string name="newTears">Does the child cry tears?</string>
+    <string name="newUrinated">Last urinated before</string>
+    <string name="newSkinTurgor">Skin Turgor Symptoms</string>
+    <string name="newInfantSuck">Feeding on Breastmilk</string>
+    <string name="newPittingEdema">Swelling (Pitting Edema)</string>
+    <string name="newPaleEyelids">Paleness inside lower Eyelids</string>
+    <string name="newPalePalms">Pale Palms</string>
+    <string name="newSkinInfection">SkinInfection</string>
+    <string name="newNasalDischarge">Nasal Discharge</string>
+    <!--<string name="newConjunctivitis">Pink discoloration on whites of eyes/ Conjunctivitis</string>-->
+    <string name="newConjunctivitis">Conjunctivitis</string>
+    <string name="newRash">Rashes</string>
+    <string name="newWeight">Weight (Kg)</string>
+    <string name="newTemperature">Temperature (°F)</string>
+    <string name="newHeartRate">HeartRate (Per Min)</string>
+    <string name="newMuac">Muac</string>
+    <string name="newConvulsion">Convulsion/ Epilepsy</string>
+    <string name="newUmbilicalInfection">Umbilical Infection</string>
+    <string name="newReferralHospital">Referred Hospital</string>
+    <string name="newReferralInstitute">Referred Institute</string>
+    <string name="newReferralReason">Reason</string>
+    <string name="newReferralHospitalBefore">Previously Referred Hospital</string>
+    <string name="newReferralInstituteBefore">Previously Referred Institute</string>
+    <string name="newReferralReasonBefore">Reason</string>
+    <string name="newRemarks">Remarks</string>
+    <string name="newVisitNo">CO Visit No</string>
+
+    <!--Dagger, Counciling, Support-->
+    <string name="new_list_item_button1">Vaccine Information</string>
+    <string name="new_list_item_button2">Counseling</string>
+    <string name="new_list_item_button3">Teaching and Support</string>
+
+    <string name="new_list_item_title1">Vaccine Information</string>
+    <string name="new_list_item_title2">Counseling</string>
+    <string name="new_list_item_title3">Teaching and support Today</string>
+
+
+    <!--Newborn Spinner-->
+    <string name="new_gender1">Boy</string>
+    <string name="new_gender2">Girl</string>
+
+    <string name="new_infant_suck1">Normal</string>
+    <string name="new_infant_suck2">Poor</string>
+    <string name="new_infant_suck3">Will not suck</string>
+
+    <string name="new_breathing1">Breathing normally</string>
+    <string name="new_breathing2">Breathing fast</string>
+    <string name="new_breathing3">Struggling or working hard to breathe</string>
+
+    <string name="new_umbilicaliInfection1">Redness Extends to Skin</string>
+    <string name="new_umbilicaliInfection2">Swelling</string>
+    <string name="new_umbilicaliInfection3">Discharge</string>
+
+    <string name="new_refer_reason1">No Reason</string>
+    <string name="new_refer_reason2">Sick</string>
+    <string name="new_refer_reason3">Vaccination</string>
+    <string name="new_refer_reason4">Postnatal Care</string>
+    <string name="new_refer_reason5">Danger Signs</string>
+    <string name="new_refer_reason6">Other</string>new
+
+
+    <!--Children-->
+
+    <string name="chl_info_general">General Information</string>
+    <string name="chl_info_observation">Observation</string>
+    <string name="chl_info_counseling">Counseling and Support</string>
+    <string name="chl_info_referral">Referral</string>
+
+    <string name="chlBenId">Beneficiary ID</string>
+    <string name="chlBenName">Beneficiary Name</string>
+    <string name="chlDateOfBirth">Date Of Birth</string>
+    <string name="chlAge">Age</string>
+    <string name="chlRegistrationDate">Registration Date</string>
+    <string name="chlVisitDate">CO Visit Date</string>
+    <string name="chlCoughing">Does the child have cough?</string>
+    <string name="chlRespiratory">Respiratory Rate</string>
+    <string name="chlChestDrawing">Child chest shows indrawing?</string>
+    <string name="chlWheezing">Does the child wheezes?</string>
+    <string name="chlVomiting">Vomiting?</string>
+    <string name="chlDiarrhea">Does the child has Diarrhea (more than 3 times/day)?</string>
+    <string name="chlDrinking">Does the child takes liquid food or is breastfed?</string>
+    <string name="chlTears">Does the child cry tears?</string>
+    <string name="chlUrinated">Last urinated before</string>
+    <string name="chlSkinTurgor">Skin Turgor Symptoms</string>
+    <string name="chlInfantSuck">Feeding on Breastmilk</string>
+    <string name="chlPittingEdema">Swelling (Pitting Edema)</string>
+    <string name="chlPaleEyelids">Paleness inside lower Eyelids</string>
+    <string name="chlPalePalms">Pale Palms</string>
+    <string name="chlSkinInfection">SkinInfection</string>
+    <string name="chlNasalDischarge">Nasal Discharge</string>
+    <!--<string name="chlConjunctivitis">Pink discoloration on whites of eyes/ Conjunctivitis</string>-->
+    <string name="chlConjunctivitis">Conjunctivitis</string>
+    <string name="chlRash">Rashes</string>
+    <string name="chlWeight">Weight (Kg)</string>
+    <string name="chlTemperature">Temperature (°F)</string>
+    <string name="chlHeartRate">Heart Rate (Per Min)</string>
+    <string name="chlMuac">Muac</string>
+    <string name="chlConvulsion">Convulsion/ Epilepsy</string>
+    <string name="chlReferralHospital">Referred Hospital</string>
+    <string name="chlReferralInstitute">Referred Institute</string>
+    <string name="chlReferralReason">Reason</string>
+    <string name="chlReferralHospitalBefore">Previously Referred Hospital</string>
+    <string name="chlReferralInstituteBefore">Previously Referred Institute</string>
+    <string name="chlReferralReasonBefore">Reason</string>
+    <string name="chlRemarks">Remarks</string>
+    <string name="chlVisitNo">CO Visit No</string>
+
+    <!--Dagger, Counciling, Support-->
+    <string name="chl_list_item_button1">Vaccine Info</string>
+    <string name="chl_list_item_button2">Counseling</string>
+    <string name="chl_list_item_button3">Teaching and Support</string>chl
+
+    <string name="chl_list_item_title1">Vaccine Information</string>
+    <string name="chl_list_item_title2">Counseling</string>
+    <string name="chl_list_item_title3">Teaching and support Today</string>
+
+
+    <!--Children Spinner-->
+    <string name="chl_coughing1">No cough</string>
+    <string name="chl_coughing2">Cough less than 14 days</string>
+    <string name="chl_coughing3">Cough more than 14 days</string>
+
+    <string name="chl_vomiting1">No vomiting</string>
+    <string name="chl_vomiting2">1-5 times</string>
+    <string name="chl_vomiting3">6-10 times</string>
+    <string name="chl_vomiting4">More than 10 times</string>
+
+    <string name="chl_diarrhea1">No Diarrhea</string>
+    <string name="chl_diarrhea2">1-5 times</string>
+    <string name="chl_diarrhea3">6-10 times</string>
+    <string name="chl_diarrhea4">More than 10 times</string>
+
+    <string name="chl_drinking1">Normal</string>
+    <string name="chl_drinking2">More than normal</string>
+    <string name="chl_drinking3">Less than normal</string>
+    <string name="chl_drinking4">Not Drinking or Breast Feeding</string>
+
+    <string name="chl_tears1">Yes</string>
+    <string name="chl_tears2">No</string>
+    <string name="chl_tears3">Don\'t know</string>
+
+    <string name="chl_urinated1">Within last 6 hours</string>
+    <string name="chl_urinated2">6-12 hours ago</string>
+    <string name="chl_urinated3">More than 12 hours ago</string>
+    <string name="chl_urinated4">Don\'t know</string>
+
+    <string name="chl_muac1">Red/Orange</string>
+    <string name="chl_muac2">Green</string>
+    <string name="chl_muac3">Yellow</string>
+
+    <string name="chl_skin_turgor1">Rapidly: Normal</string>
+    <string name="chl_skin_turgor2">Slow: 1-2 seconds</string>
+    <string name="chl_skin_turgor3">Very slow: more than 2 seconds</string>
+
+    <string name="chl_skin_infection1">Red</string>
+    <string name="chl_skin_infection2">Warm</string>
+    <string name="chl_skin_infection3">Swelling</string>
+    <string name="chl_skin_infection4">Pain</string>
+    <string name="chl_skin_infection5">Discharge/Drainage</string>
+
+    <string name="chl_refer_reason1">No Reason</string>
+    <string name="chl_refer_reason2">Sick</string>
+    <string name="chl_refer_reason3">Vaccination</string>
+    <string name="chl_refer_reason4">Diarrhea</string>
+    <string name="chl_refer_reason5">Respiratory Symptoms including Pneumonia</string>
+    <string name="chl_refer_reason6">Danger Signs</string>new
+    <string name="chl_refer_reason7">Severe Malnutrition</string>new
+    <string name="chl_refer_reason8">Other</string>
+
+
+    <!--Vaccine-->
+    <string name="vac_info_general">General Information</string>
+    <string name="vac_info_vaccine">Vaccine Follow-up</string>
+
+    <string name="vacBenId">Beneficiary ID</string>
+    <string name="vacBenName">Beneficiary Name</string>
+    <string name="vacDateOfBirth">Date Of Birth</string>
+    <string name="vacAge">Age</string>
+    <string name="vacBcg">BCG</string>
+    <string name="vacOpv0">OPV - 0</string>
+    <string name="vacOpv1">OPV - 1</string>
+    <string name="vacOpv2">OPV - 2</string>
+    <string name="vacOpv3">OPV - 3</string>
+    <string name="vacPenta1">Penta - 1</string>
+    <string name="vacPenta2">Penta - 2</string>
+    <string name="vacPenta3">Penta - 3</string>
+    <string name="vacPcv1">PCV - 1</string>
+    <string name="vacPcv2">PCV - 2</string>
+    <string name="vacPcv3">PCV - 3</string>
+    <string name="vacIpv">IPV</string>
+    <string name="vacMr1">MR (Dose 1)</string>
+    <string name="vacMr2">MR (Dose 2)</string>
+
+    <!--Monimix-->
+    <string name="mon_info_general">General Information</string>
+    <string name="mon_info_monimix">Monimix Follow-up</string>
+
+    <string name="monBenId">Beneficiary ID</string>
+    <string name="monBenName">Beneficiary Name</string>
+    <string name="monDateOfBirth">Date Of Birth</string>
+    <string name="monAge">Age</string>
+    <string name="monFirstMonth">Dose taken in first month</string>
+    <string name="monSecondMonth">Dose taken in second month</string>
+    <string name="monSixMonthCompleted">Dose completed in sixth month</string>
+
+    <!--IFA-->
+    <string name="ifa_info_general">General Information</string>
+    <string name="ifa_info_ifa">IFA Follow-up</string>
+
+    <string name="ifaBenId">Beneficiary ID</string>
+    <string name="ifaBenName">Beneficiary Name</string>
+    <string name="ifaDateOfBirth">Date Of Birth</string>
+    <string name="ifaAge">Age</string>
+
+    <string name="ifaIFAGot">Obtained</string>
+    <string name="ifaIFATaken">Taken</string>
+    <string name="ifaIFAInHand">Left</string>
+    <string name="ifaCALGot">Obtained</string>
+    <string name="ifaCALTaken">Taken</string>
+    <string name="ifaCALInHand">Left</string>
+
+    <string name="ifa_ifa_stock">How many Iron and Folic Acid?</string>
+    <string name="ifa_cal_stock">How many Calcium?</string>
+    <string name="ifa_side_effect">Any side effect due to Iron/Folic Acid?</string>
+
+    <!--Community-->
+    <string name="com_info_general">General Information</string>
+    <string name="com_info_wast_management">Waste Management Information</string>
+    <string name="com_info_water_management">Safe Drinking Water Information</string>
+    <string name="com_info_water_management_visit_date">Safe Drinking Water Information Visit Date</string>
+    <string name="com_info_toilet_followup">Toilet Follow-up Information</string>
+    <string name="com_info_hand_wash">Child Hand Wash Information</string>
+    <string name="com_info_toilet_list">Toilet Information</string>
+
+    <string name="comHomeNo">Home No</string>
+    <string name="comHomeName">Home Name</string>
+    <string name="comHouseID">House ID</string>
+    <string name="comVisitDate">CO Visit Date</string>
+    <string name="comWasteBinUse">Is the waste of the house dumped in the red bin?</string>
+    <string name="comWasteBinCover">Is the red bin covered?</string>
+    <string name="comWasteBinBlueUse">Is the waste of the home dumped in the blue bin and the bin
+        is covered? OR, Is the waste dumped directly in the van?</string>
+    <string name="comWasteBinUseMsg">Counsel if any of the above mentioned fields is "no" and write Counselling Message</string>
+    <string name="comDrinkBoilWater">Is the family drinking boiled water?</string>
+    <string name="comCoverDrinkingWater">Is the drinking water covered?</string>
+    <string name="comDrinkingWaterUseMsg">Counsel if any of the above mentioned fields is "no" and write Counselling Message</string>
+    <string name="comDrinkingWaterOther">Is drinking water purified by other means (e.g, Chlorine tablet, Alum, Filtration, Mineral water, Tube well water etc.)? </string>
+    <string name="comCbheMember">Is there any CBHE member in home?</string>
+    <string name="comCvMember">Is there any CV member in home?</string>
+    <string name="comToiletUseMsg">Counsel if any of the above mentioned fields is "no"  </string>
+    <string name="comToiletUseMsg2">Counsel if any of the following fields is "no" for any toilet</string>
+    <string name="comChildToiletUse">Is the child washing hands after using the toilet? (Select child name and age)</string>
+    <string name="comRemarks">Remarks</string>
+    <string name="comVisitNo">CO VisitNo</string>
+    <string name="comToiletNumber">Toilet Number</string>
+    <string name="comToiletFollowUpVisitDate">TFI Visit Date</string>
+    <string name="comAttachedToilet">Attached Toilet</string>
+    <string name="comLockToilet">Unlocked Toilet</string>
+    <string name="comCleanToilet">Clean Toilet</string>
+    <string name="comPosterToilet">Posters of 5 habits in display</string>
+    <string name="comMaleFemaleToilet">Who are using this Toilet</string>
+    <string name="comToiletNumberGr">No</string>
+    <string name="comAttachedToiletGr">Attached</string>
+    <string name="comLockToiletGr">Unlatched</string>
+    <string name="comCleanToiletGr">Clean</string>
+    <string name="comPosterToiletGr">Posters</string>
+    <string name="comPosterGenderGr">Use</string>
+
+    <!--Deworming-->
+    <string name="dew_info_general">General Information</string>
+    <string name="dew_info_observation">Observation</string>
+
+    <string name="dewBenId">Beneficiary ID</string>
+    <string name="dewBenName">Beneficiary Name</string>
+    <string name="dewDateOfBirth">Date Of Birth</string>
+    <string name="dewAge">Age</string>
+    <string name="dewVisitDate">Deworming Week Date</string>
+    <string name="dewSchool">Does the child goes to school?</string>
+    <string name="dewCard">have deworming medicine card?</string>
+    <string name="dewDose">Dose</string>
+    <string name="dewMssDose">Did the child take deworming medicine after MSS round?</string>
+    <string name="dewIntegration">Check the item boxes integrated with other components</string>
+    <string name="dewFollowup">Did the followup of child held within 7 days?</string>
+    <string name="dewRemarks">Remarks</string>
+    <string name="dewVisitNo">CO VisitNo</string>
+
+    <string name="deworming_round_1">1st round</string>
+    <string name="deworming_round_2">2nd round</string>
+
+    <string name="deworming_school_1">Does not go to School</string>
+    <string name="deworming_school_6">Other School</string>
+    <string name="deworming_father_name">Father Name</string>
+    <string name="deworming_mother_name">Mother Name</string>
+    <string name="deworming_no_father_name">No Father Name</string>
+    <string name="deworming_no_mother_name">No Mother Name</string>
+
+    <!--GMP-->
+    <string name="gmp_info_general">General Information</string>
+    <string name="gmp_info_observation">GMP Information</string>
+
+    <string name="gmpBenId">BenId</string>
+    <string name="gmpBenName">BenName</string>
+    <string name="gmpStartDate">StartDate</string>
+    <string name="gmpCareTaker">Caregiver Name</string>
+    <string name="gmpRelation">Relation</string>
+    <string name="gmpMaterials">Materials</string>
+    <string name="gmpGmpDate">Gmp Date</string>
+    <string name="gmpEs">Es</string>
+    <string name="gmpWeights">Weights</string>
+    <string name="gmpHeight">Height</string>
+    <string name="gmpMuac">Muac (Cm)</string>
+    <string name="gmpReferral">Referral</string>
+    <string name="gmpMnp">Mnp</string>
+    <string name="gmpHomeVisit">Preferred Time for Home Visit</string>
+    <string name="gmpSevereMalnutrition">Severe Malnutrition</string>
+    <string name="gmpMediumMalnutrition">Medium Malnutrition</string>
+    <string name="gmpLowerMalnutrition">Lower Malnutrition</string>
+    <string name="gmpNormal">Normal</string>
+    <string name="gmpOverweight">Overweight</string>
+    <string name="gmpSevereStunting">Severe Stunting</string>
+    <string name="gmpMediumStunting">Medium Stunting</string>
+    <string name="gmpLowerStunting">Lower Stunting</string>
+    <string name="gmpOverheight">Over Height</string>
+    <string name="gmpSAM">SAM</string>
+    <string name="gmpMAM">MAM</string>
+
+    <string name="gmp_term_1">1st time</string>
+    <string name="gmp_term_2">2nd time</string>
+    <string name="gmp_term_3">3rd time</string>
+    <string name="gmp_term_4">4th time</string>
+    <string name="gmp_term_5">5th time</string>
+    <string name="gmp_term_6">6th time</string>
+    <string name="gmp_term_7">7th time</string>
+    <string name="gmp_term_8">8th time</string>
+    <string name="gmp_term_9">9th time</string>
+    <string name="gmp_term_10">10th time</string>
+
+    <!--Adolescent-->
+    <string name="adolescent_counseling_meeting_info">Counseling Meeting Info</string>
+    <string name="adolescent_counseling_meeting_serial_no">Meeting No : </string>
+    <string name="adolescent_existing_beneficiary_info">Present Beneficiary Info</string>
+
+    <string name="adolescentMeetingNumber">Meeting Number</string>
+    <string name="adolescentDate">Adolescent Meeting Date</string>
+    <string name="adolescentMeetingPlace">Meeting Place/Home Name</string>
+    <string name="adolescentMessageNumber">Counseling message number</string>
+    <string name="adolescentMessageTitle">Message Title</string>
+    <string name="adolescentIntegration">Integration</string>
+    <string name="adolescentReferralInstitute">Referral Institute</string>
+    <string name="adolescentFollowup">Followup</string>
+    <string name="adolescentRemarks">Comments</string>
+
+    <!--Courtyard-->
+    <string name="courtyard_session_info">Session Info</string>
+    <string name="courtyard_beneficiary_info_present_in_session">Beneficiary information present in session</string>
+
+    <string name="courtyardMeetingNumber">Meeting No</string>
+    <string name="courtyardMeetingDate">Meeting Date</string>
+    <string name="courtyardMeetingPlace">Meeting Place</string>
+    <string name="courtyardSessionType">Session Type</string>
+    <string name="courtyardStartTime">Start Time</string>
+    <string name="courtyardEndTime">End Time</string>
+    <string name="courtyardTitle">Session Name</string>
+    <string name="courtyardSubject">Discussing Topic</string>
+    <string name="courtyardAttendant">Attendant Name</string>
+    <string name="courtyardSex">Gender</string>
+    <string name="courtyardRelation">Relation</string>
+    <string name="courtyardPresent">Present</string>
+
+    <string name="courtyard_relation_1">Mother</string>
+    <string name="courtyard_relation_2">Father</string>
+    <string name="courtyard_relation_3">Sister</string>
+    <string name="courtyard_relation_4">Brother</string>
+    <string name="courtyard_relation_5">Mother-in-law</string>
+    <string name="courtyard_relation_6">Sister-in-law</string>
+    <string name="courtyard_relation_7">Maternal Grandmother</string>
+    <string name="courtyard_relation_8">Maternal Grandfather</string>
+    <string name="courtyard_relation_9">Paternal Grandmother</string>
+    <string name="courtyard_relation_10">Paternal Grandfather</string>
+    <string name="courtyard_relation_11">Maternal Aunt</string>
+    <string name="courtyard_relation_12">Paternal Aunt</string>
+
+    <string name="courtyard_subject_CBHE_1">Personal cleanliness and wash hands</string>
+    <string name="courtyard_subject_CBHE_2">Safe water</string>
+    <string name="courtyard_subject_CBHE_3">5 habits of using healthy toilets properly</string>
+    <string name="courtyard_subject_CBHE_4">Food and nutrition</string>
+
+    <string name="courtyard_subject_ARSH_1">Life skills</string>
+    <string name="courtyard_subject_ARSH_2">Physical and emotional changes of adolescence and duties </string>
+    <string name="courtyard_subject_ARSH_3">Carefulness during menstruation / Nocturnal emission</string>
+    <string name="courtyard_subject_ARSH_4">Teenage food and nutrition</string>
+    <string name="courtyard_subject_ARSH_5">Drug and addiction</string>
+    <string name="courtyard_subject_ARSH_6">Sexual harassment</string>
+    <string name="courtyard_subject_ARSH_7">Reproductive Health</string>
+    <string name="courtyard_subject_ARSH_8">Child marriage prevention</string>
+
+    <!--Session-->
+    <string name="session_session_info">Session Info</string>
+    <string name="session_beneficiary_info_present_in_session">Beneficiary information</string>
+
+    <string name="sessionMeetingNumber">Meeting No</string>
+    <string name="sessionMeetingDate">Meeting Date</string>
+    <string name="sessionMeetingPlace">Meeting Place</string>
+    <string name="sessionVanue">Session Venue</string>
+    <string name="sessionOrganizerName">Organizer Name</string>
+    <string name="sessionSessionType">Session Type</string>
+    <string name="sessionStartTime">Start Time</string>
+    <string name="sessionEndTime">End Time</string>
+    <string name="sessionCatagory">Session Category</string>
+    <string name="sessionSubject">Session Topic</string>
+    <string name="sessionSubjectOther">Session Topic Other</string>
+    <string name="sessionParticipantType">Participant Type</string>
+
+    <string name="session_session_type_1">Pregnant women Session</string>
+    <string name="session_session_type_2">Husband and in-laws Session</string>
+    <string name="session_session_type_3">CBHE (5-12 Years) Session</string>
+    <string name="session_session_type_4">CBHE (13-19 Years) Session</string>
+    <string name="session_session_type_5">ARSH (Boy) Session</string>
+    <string name="session_session_type_6">ARSH (Girl) Session</string>
+    <string name="session_session_type_7">CBHE (Parental) Session</string>
+    <string name="session_session_type_8">CBHE Session</string>
+    <string name="session_session_type_9">Slum Manager Meeting</string>
+
+    <string name="group_20_member_validation">You can not add more than 20 member in a group</string>
+    <string name="group_15_member_validation">You can not add more than 15 member in a group</string>
+
+    <string name="session_session_typeid_1">Courtyard Meeting</string>
+    <string name="session_session_typeid_2">General Meeting</string>
+    <string name="session_session_typeid_3">RC Session</string>
+
+    <string name="session_participant_type_1">Children</string>
+    <string name="session_participant_type_2">Parents</string>
+    <string name="session_participant_type_3">Care giver</string>
+
+    <!--House Hold Service-->
+    <string name="house_hold_mobile_message">Mobile Message</string>
+    <string name="house_hold_tv_message">Tv Message</string>
+    <string name="house_hold_leaflet_poster">Distribution Of Leaflets And Posters</string>
+    <string name="house_hold_garbage_management">Get Help in Waste Management</string>
+    <string name="house_hold_mikeing_for_boiled_water">Miking / Initiative For Drinking Boiled Water</string>
+
+    <string name="weightHint">Kg</string>
+    <string name="temperatureHint">Fahrenheit</string>
+    <string name="heartRateHint">Per Minute</string>
+    <string name="sponsor_child">Sponsored Child</string>
+    <string name="member_count">Member Count</string>
+
+
+    <string name="GmpMaterialList1">Child Development Card</string>
+    <string name="GmpMaterialList2">My World</string>
+    <string name="GmpMaterialList3">My Home</string>
+    <string name="GmpMaterialList4">GMP Card</string>
+    <string name="GmpMaterialList5">Zipper File</string>
+
+    <!--new added for October Launching-->
+    <string name="group_type">Group Type</string>
+    <string name="group_name">Group Name</string>
+    <string name="group_year">Group Year</string>
+    <string name="group_code">Group Code</string>
+    <string name="father_name">Father Name</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="group_info">Group Information</string>
+    <string name="member_info">Member Information</string>
+    <string name="member_list">List Of Members</string>
+    <string name="is_deactivate">Is Deactivated ?</string>
+    <string name="formation_date">Formation Date</string>
+    <string name="deactivation_date">Deactivation Date</string>
+    <string name="is_dropped_out">Is Dropped Out ?</string>
+    <string name="join_date">Join Date</string>
+    <string name="dropout_date">Dropout Date</string>
+    <string name="dropout_reason">Dropout Reason</string>
+    <string name="presence">Presence</string>
+    <string name="member">Member</string>
+    <string name="dropout_reason_1">Group Deactivate</string>
+    <string name="dropout_reason_2">Migration</string>
+    <string name="dropout_reason_3">Death</string>
+    <string name="group_search_hint">Search By Group Name</string>
+    <string name="visit_date">CO Visit Date</string>
+    <string name="input_home_name">Enter Home Name</string>
+    <string name="ben_parents_update">Update Parents Information</string>
+    <string name="muacColor">Muac (Color)</string>
+    <string name="muac1">Green</string>
+    <string name="muac2">Yellow</string>
+    <string name="muac3">Orange</string>
+    <string name="muac4">Red</string>
+    <string name="not_selected">Not Selected</string>
+    <string name="home_visit_time_1">Morning</string>
+    <string name="home_visit_time_2">Noon</string>
+    <string name="home_visit_time_3">Afternoon</string>
+    <string name="facilitatorId">Facilitator ID</string>
+    <string name="facilitatorName">Facilitator Name</string>
+    <string name="pregnant_women_rc_session_subject_1">Pregnant Four time Checkup (Saaf Kotha-1)</string>
+    <string name="pregnant_women_rc_session_subject_2">Delivery plan and preparation (Saaf Kotha-2)</string>
+    <string name="pregnant_women_rc_session_subject_3">Necessity for Neonatal Care (Saaf Kotha-3)</string>
+    <string name="pregnant_women_rc_session_subject_4">Prevention of newborn infections (Saaf Kotha-4)</string>
+    <string name="pregnant_women_rc_session_subject_5">Newborn Risk (Saaf Kotha-5)</string>
+    <string name="pregnant_women_rc_session_subject_6">Prenatal, During delivery, Postpartum Danger signs (Saaf Kotha-6)</string>
+    <string name="pregnant_women_rc_session_subject_7">Prenatal, Postpartum care, Mother and Newborn Protection (Saaf Kotha-7)</string>
+    <string name="pregnant_women_rc_session_subject_8">Pregnant mother and baby care and family responsibilities</string>
+    <string name="pregnant_women_rc_session_subject_9">Husband and wife responsibilities towards child care</string>
+    <string name="sdwf_filter_1">Chlorine Tablet</string>
+    <string name="sdwf_filter_2">Fitkari</string>
+    <string name="sdwf_filter_3">Filter</string>
+    <string name="sdwf_filter_4">Mineral water</string>
+    <string name="sdwf_filter_5">Tube well water</string>
+    <string name="waste_counselling_1">Drain the waste in the red pottery</string>
+    <string name="waste_counselling_2">Cover waste keeping red pottery with lid</string>
+    <string name="waste_counselling_3">Drain waste to specific place / large blue drum / van</string>
+    <string name="hand_wash_counselling_1">After toilet wash your child hand with soap</string>
+    <string name="toilet_counselling_1">Keep the toilet open / unlocked</string>
+    <string name="toilet_counselling_2">Keep the toilet clean</string>
+    <string name="toilet_counselling_3">Hang the poster of 5 habits in front of the toilet</string>
+    <string name="toilet_counselling_4">Keep Toilet Gender specific</string>
+    <string name="water_counselling_1">Drink boiled water</string>
+    <string name="water_counselling_2">Keep the pot covered with a lid to keep the water</string>
+
+    <string name="parents_gender_error">Select porper Gender</string>
+    <string name="select_correct_ben">Select Correct Beneficiary</string>
+    <string name="age">Age</string>
+    <string name="age_month">Age (Month)</string>
+    <string name="child_name">Children Name</string>
+    <string name="center_type">Center Type</string>
+    <string name="center_name">Center Name</string>
+    <string name="status">Status</string>
+    <string name="weight">Weight (Kg)</string>
+    <string name="height">Height (Cm)</string>
+    <string name="muac">Muac (Cm)</string>
+    <string name="hint_kg">Enter Kg</string>
+    <string name="hint_cm">Enter Cm</string>
+    <string name="graph">Graph</string>
+
+    <string name="comTFIToday">Has followed-up today?</string>
+    <string name="migrationInfo">Migration Info</string>
+    <string name="migration_type_choice">Choose Migration Type</string>
+    <string name="migration_type_family">Family</string>
+    <string name="migration_type_ben">Beneficiary</string>
+    <string name="migration_status_in">IN</string>
+    <string name="migration_status_out">OUT</string>
+    <string name="migration_family_info">Family Info</string>
+    <string name="migration_ben_info">Beneficiary Info</string>
+    <string name="search">Search</string>
+    <string name="migration_date">Migration Date</string>
+    <string name="geo_type">Geo Type</string>
+    <string name="family_list">Family List</string>
+    <string name="search_material">Search Material</string>
+
+    <string name="toilet">Toilet</string>
+    <string name="toilet_fetch_warning_text">Want to download old Toilet Data?</string>
+    <string name="gmp_relation_5">Grandmother</string>
+    <string name="gmp_relation_6">Grandfather</string>
+    <string name="es_counseling">ES Counselling</string>
+    <string name="migration_in_new">Old House</string>
+    <string name="migration_in_old">New House</string>
+    <string name="search_home">Search Home No</string>
+    <string name="migrating">Migrating...</string>
+    <string name="migration_in_warning">Please Migrate Existing Family in this House!</string>
+    <string name="migration_button">Migration</string>
+    <string name="migration_in_material">In Material</string>
+    <string name="search_info">Searching Information</string>
+    <string name="server_error">Server Error</string>
+    <string name="migration_message_1">Invalid house/Family information! Please provide valid information</string>
+    <string name="migration_message_2">Already Migrated ! Fetch Registration Data Once again</string>
+    <string name="migration_message_3">Migration Success</string>
+    <string name="migration_message_4">Migration Error</string>
+    <string name="enter_necessary_data">Enter Necessary Data</string>
+    <string name="migration_warning_message">Want to do Migration?</string>
+    <string name="height_alert">Height shoulde be between 40-125 cm</string>
+    <string name="weight_alert">Weight shoulde be between 1-28 kg</string>
+    <string name="muac_alert">Muac shoulde be between 1-25 cm</string>
+    <string name="faulty_height_alert">Height Faulty</string>
+    <string name="faulty_weight_alert">Weight Faulty</string>
+    <string name="faulty_muac_alert">Muac Faulty</string>
+    <string name="referel_alert">kindly insert referel information</string>
+
+    <string name="hint_primary_info">Primary Info</string>
+    <string name="group_valid_until">Valid Until</string>
+    <string name="enrolled_date">Enrolled Date</string>
+    <string name="alert_session_type_exist">Session Type Already Exist</string>
+    <string name="alert_group_already_exist">Group Already Exist</string>
+
+    <string name="boy">Boy</string>
+    <string name="girl">Girl</string>
+    <string name="home_search">Search Home No</string>
+
+    <!--Card-->
+    <string name="card_date">Date :</string>
+    <string name="card_name">Name :</string>
+    <string name="card_borrowed_books">Borrowed Books :</string>
+    <string name="card_returned_books">Returned Books :</string>
+    <string name="card_id">ID :</string>
+    <string name="card_remarks">Remarks : </string>
+
+    <string name="invalid">Invalid</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+
+    <!--GMP Counseling Checklist-->
+    <string name="gmp_counseling_checklist_0_6months">শিশুকে শুধুমাত্র মায়ের দুধ খাওয়ান</string>
+    <string name="gmp_counseling_checklist_6_8months1">পারিবারিক চটকানো খাবার</string>
+    <string name="gmp_counseling_checklist_6_8months2">প্রতিদিন মাছ বা ডিম বা মুরগির কলিজা বা মাংস + ঘন ডাল + শাক, হলুদ সবজি ও ফল + তেলে ভাজা খাবার</string>
+    <string name="gmp_counseling_checklist_6_8months3">শক্ত/নরম খাবার</string>
+    <string name="gmp_counseling_checklist_6_8months4">১ পোয়া বাটির ১/২ বাটি করে দিনে ২ বার স্বাস্থ্যকর্মীর পরামর্শ অনুযায়ী নিয়মিত আয়রন খাওয়ানো</string>
+    <string name="gmp_counseling_checklist_9_11months1">সময় নিয়ে শিশুকে নিজে নিজে খেতে শিখানো</string>
+    <string name="gmp_counseling_checklist_9_11months2">প্রতিদিন মাছ বা ডিম বা মুরগির কলিজা বা মাংস + ঘন ডাল + শাক, হলুদ সবজি ও ফল + তেলে ভাজা খাবার</string>
+    <string name="gmp_counseling_checklist_9_11months3">দিনে ৩ বার ১/২ বাটি এবং ১-২ বার পুষ্টিকর নাস্তা (পাকা আম, পাকা পেপে, কাঁঠাল, সিদ্ধ ডিম)</string>
+    <string name="gmp_counseling_checklist_9_11months4">বিঃ দ্রঃ স্বাস্থ্যকর্মীর পরামর্শ অনুযায়ী নিয়মিত আয়রন খাওয়ানো</string>
+    <string name="gmp_counseling_checklist_12_23months1">শিশুকে নিজে নিজে খেতে উৎসাহ দিতে হবে</string>
+    <string name="gmp_counseling_checklist_12_23months2">প্রতিদিন মাছ বা ডিম বা মুরগির কলিজা বা মাংস + ঘন ডাল + শাক, হলুদ সবজি ও ফল + ১ চা চামচ তেল অথবা তেলে ভাজা খাবার এবং গরুর দুধ দিয়ে তৈরি খাবার</string>
+    <string name="gmp_counseling_checklist_12_23months3">প্রতিদিন ৩ বাটি খাবার এবং ১-২ বার পুষ্টিকর নাস্তা (পাকা আম, পাকা পেপে, কাঁঠাল, সিদ্ধ ডিম)</string>
+    <string name="gmp_counseling_checklist_12_23months4">বিঃ দ্রঃ স্বাস্থ্যকর্মীর পরামর্শ অনুযায়ী নিয়মিত আয়রন খাওয়ানো</string>
+    <string name="gmp_counseling_checklist_Child_reluctant_to_eat1">যখন ক্ষুদা পাবে তখন খাওয়াবেন</string>
+    <string name="gmp_counseling_checklist_Child_reluctant_to_eat2">বিভিন্ন ধরনের খাবার বার বার দিতে হবে, কারণ একই ধরনের খাবার বার বার সে খাবে না</string>
+    <string name="gmp_counseling_checklist_Child_reluctant_to_eat3">জুস, পানি, চিপ্স, চকলেট জাতীয় খাবার খাওয়ানো যাবে না</string>
+    <string name="gmp_counseling_checklist_Child_reluctant_to_eat4">উৎসাহ দিয়ে ও প্রশংসা করে খাওয়াতে হবে</string>
+    <string name="gmp_counseling_checklist_Child_reluctant_to_eat5">সময় নিয়ে ও ধৈর্য ধরে খাওয়াতে হবে</string>
+    <string name="gmp_counseling_checklist_Child_reluctant_to_eat6">শিশুকে তার পছন্দের পুষ্টিকর খাবার দিতে হবে</string>
+    <string name="gmp_counseling_checklist_Child_reluctant_to_eat7">কখনই জোর করা যাবে না</string>
+    <string name="gmp_counseling_checklist_Feeding_a_weak_child1">ঘন ঘন মায়ের দুধ খাওয়াতে হবে</string>
+    <string name="gmp_counseling_checklist_Feeding_a_weak_child2">শিশুকে তার পছন্দের পুষ্টিকর খাবার দিতে হবে</string>
+    <string name="gmp_counseling_checklist_Feeding_a_weak_child3">অল্প অল্প করে ঘন ঘন খেতে দিতে হবে</string>
+    <string name="gmp_counseling_checklist_Feeding_a_weak_child4">অসুখ থেকে সেরে উঠলে আগের ওজন না হওয়া পর্যন্ত অন্তত ১ সপ্তাহ বেশি পরিমাণে ঘন ঘন পুষ্টিকর খাবার খেতে দিতে হবে</string>
+    <string name="gmp_counseling_checklist_Feeding_a_weak_child5">শিশুকে রোগমুক্ত রাখতে খাওয়ানোর আগে সবসময় সাবান-পানি দিয়ে হাত ধুতে হবে</string>
+    <string name="gmp_counseling_checklist_Nutritious_food_and_breakfast">প্রত্যেক গ্রুপ থেকে প্রতিদিন একটি করে খাবার দিতে হবেঃ (১.মাছ, ডিম, মুরগির কলিজা, মাংস ২.দই, পনির, সেমাই, পায়েশ, ফিরনি, ক্ষীর
+        ৩.শাক, পাকা আম, পাকা পেপে, মিষ্টি কুমড়া, কাঁঠাল ৪.ঘন ডাল ৫.তেলের ভাজা খাবার এবং ঘি বা মাখন বা বাদাম)</string>
+
+    <string name="ben_save_request">Kindly save Beneficiary info</string>
+    <string name="gmp_date_alert">The time difference between the child and the GMP is not correct</string>
+
+    <string name="searching">Searching...</string>
+
+    <string name="ad_counselling_message_1">প্রজনন স্বাস্থ্য,প্রজনন স্বাস্থ্য অধিকার ও প্রজনন স্বাস্থ্যসেবা</string>
+    <string name="ad_counselling_message_2">প্রজনন স্বাস্থ্য উপাদান সমূহ ও প্রজনন অঙ্গ</string>
+    <string name="ad_counselling_message_3">কিশোর-কিশোরীদের শারীরিক ও মানসিক পরিবর্তন</string>
+    <string name="ad_counselling_message_4">মাসিক ও মাসিক সংক্রান্ত চক্র</string>
+    <string name="ad_counselling_message_5">কিশোরীদের মাসিককালীন পরিচর্যা</string>
+    <string name="ad_counselling_message_6">কৈশোরে পুষ্টি</string>
+    <string name="ad_counselling_message_7">কিশোরীদের টিটেনাসের টিকা</string>
+    <string name="ad_counselling_message_8">কিশোর-কিশোরীদের জীবন গড়ার পরিকল্পনা</string>
+    <string name="ad_counselling_message_9">শিশু বিবাহ</string>
+    <string name="ad_counselling_message_10">জেন্ডার</string>
+    <string name="ad_counselling_message_11">যৌন হয়রানি</string>
+    <string name="ad_counselling_message_12">উপরোক্ত বিষয়সমূহের পুনঃরালচনা</string>
+
+    <string name="ad_referral_reason_1">টি টি টিকার কারণে</string>
+    <string name="ad_referral_reason_2">সাদা স্রাব ভাঙার কারণে</string>
+    <string name="ad_referral_reason_3">অনিয়মিত মাসিক হওয়ার কারণে</string>
+    <string name="ad_referral_reason_4">তলপেটে ব্যাথা হওয়ার কারণে</string>
+    <string name="ad_referral_reason_5">গোপন অঙ্গে চুলকানি বা ঘাঁ হওয়ার কারণে</string>
+    <string name="ad_referral_reason_6">অপুষ্টির কারণে</string>
+
+    <string name="has_guardian">Has Guardian</string>
+    <string name="card_total_present">Total Presence : </string>
+    <string name="member_save_request">Kindly save Member info</string>
+    <string name="time_invalid">End time should be greater than start time</string>
+
+    <string name="year_month_day">Year-Month-Day</string>
+    <string name="monimix_fetch_warning_text">Want to download old Monimix Data?</string>
+
+    <string name="guardianName">Guardian Name</string>
+    <string name="guardianAge">Guardian Age</string>
+    <string name="guardianGender">Guardian Gender</string>
+    <string name="guardianRelation">Relation With Ben</string>
+    <string name="referralInstituteOthers">Others Institute</string>
+    <string name="serviceTaken">Service Taken</string>
+    <string name="presenceType">Presence Type</string>
+    <string name="beneficiary">Beneficiary</string>
+    <string name="guardian">Guardian</string>
+
+    <string name="toilet_followup">Toilet Follow-up</string>
+    <string name="ben_name_search">Search Beneficiary Name</string>
+    <string name="toilet_save_request">Kindly save Toilet info</string>
+    <string name="home_no_name">Home No : Name</string>
+    <string name="unusedToilet">Unused Toilet</string>
+    <string name="nth_number">No</string>
+    <string name="unused">Unused</string>
+    <string name="card_total_toilet">Total Toilet : </string>
+    <string name="card_visit_no">Visit Number : </string>
+    <string name="card_home_no">Home No : </string>
+    <string name="close_less">Collaps</string>
+    <string name="open_expand">Expand</string>
+    <string name="children_list">Children List</string>
+    <string name="wash_hand">Washed by soap</string>
+    <string name="hand_wash_followup">Children Hand Wash Follow-up</string>
+    <string name="card_total_children">Total Child : </string>
+    <string name="hand_wash_warning">Provide Hand Wash Information</string>
+    <string name="waste_management">Waste Management Follow-up</string>
+    <string name="card_total_house">Total House : </string>
+    <string name="house_already_exist">House data already exist</string>
+    <string name="house_save_request">Kindly save house info</string>
+    <string name="followup_warning">save followup info</string>
+    <string name="drinking_water">Drinking Water Follow-up</string>
+    <string name="drinking_water_title">Drinking Water Information</string>
+    <string name="drinking_water_filter">Water Filtering</string>
+
+    <string name="bikash_card_1ka1">1ka-1</string>
+    <string name="bikash_card_1ka2">1ka-2</string>
+    <string name="bikash_card_1ka3">1ka-3</string>
+    <string name="bikash_card_1kha1">1kha-1</string>
+    <string name="bikash_card_1kha2">1kha-2</string>
+    <string name="bikash_card_1Ga1">1Ga-1</string>
+    <string name="bikash_card_1Ga2">1Ga-2</string>
+
+    <string name="bikash_card_2ka1">2ka-1</string>
+    <string name="bikash_card_2ka2">2ka-2</string>
+    <string name="bikash_card_2ka3">2ka-3</string>
+    <string name="bikash_card_2kha1">2kha-1</string>
+    <string name="bikash_card_2kha2">2kha-2</string>
+    <string name="bikash_card_2kha3">2kha-3</string>
+    <string name="bikash_card_2Ga1">2Ga-1</string>
+    <string name="bikash_card_2Ga2">2Ga-2</string>
+
+    <string name="bikash_card_3ka1">3ka-1</string>
+    <string name="bikash_card_3ka2">3ka-2</string>
+    <string name="bikash_card_3ka3">3ka-3</string>
+    <string name="bikash_card_3kha1">3kha-1</string>
+    <string name="bikash_card_3kha2">3kha-2</string>
+    <string name="bikash_card_3kha3">3kha-3</string>
+    <string name="bikash_card_3Ga1">3Ga-1</string>
+    <string name="bikash_card_3Ga2">3Ga-2</string>
+
+    <string name="bikash_card_4ka1">4ka-1</string>
+    <string name="bikash_card_4ka2">4ka-2</string>
+    <string name="bikash_card_4ka3">4ka-3</string>
+    <string name="bikash_card_4kha1">4kha-1</string>
+    <string name="bikash_card_4kha2">4kha-2</string>
+    <string name="bikash_card_4kha3">4kha-3</string>
+    <string name="bikash_card_4Ga1">4Ga-1</string>
+    <string name="bikash_card_4Ga2">4Ga-2</string>
+
+    <string name="bikash_card_5ka1">5ka-1</string>
+    <string name="bikash_card_5ka2">5ka-2</string>
+    <string name="bikash_card_5ka3">5ka-3</string>
+    <string name="bikash_card_5kha1">5kha-1</string>
+    <string name="bikash_card_5kha2">5kha-2</string>
+    <string name="bikash_card_5kha3">5kha-3</string>
+    <string name="bikash_card_5Ga1">5Ga-1</string>
+    <string name="bikash_card_5Ga2">5Ga-2</string>
+
+    <string name="gps_not_enable">Location is not Enabled.Do you want to go to settings to enable it?</string>
+    <string name="give_counselling">Please give counselling messages</string>
+    <string name="registered">Registered</string>
+    <string name="relation_grandFather">Grand Father</string>
+    <string name="relation_grandMother">Grand Mother</string>
+    <string name="guardian_list">List Of Guardian</string>
+    <string name="input_guardian_info">Please Give Guardian Info</string>
+    <string name="referral_remarks">Referral Remarks</string>
+    <string name="service_taken_institution">Service Institution</string>
+    <string name="service_taken_institution_others">Service Institution Others</string>
+    <string name="age_year_card">Age (Year) : </string>
+    <string name="age_year">Age (Year) </string>
+    <string name="refresh_group_member">Fetch Group Member By Refresh Button</string>
+
+    <string name="duplicate_date_home">This date has a visit at same home</string>
+    <string name="has_concern">Has Concern</string>
+    <string name="adoloescent_iga_guardian">Current Guardian</string>
+    <string name="facebook_name">Facebook Name</string>
+    <string name="institution_name">Institution Name</string>
+    <string name="trade_name">Trade Name</string>
+    <string name="goal">Goal After Training ?</string>
+    <string name="graduation_date">Graduation Date</string>
+    <string name="job_type">Job Type</string>
+    <string name="education_grade">Education Grade</string>
+    <string name="adolescent_iga">Adoloescent Iga</string>
+
+</resources>
