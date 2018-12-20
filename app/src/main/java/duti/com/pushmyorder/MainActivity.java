@@ -1,15 +1,22 @@
 package duti.com.pushmyorder;
 
+import android.app.Dialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
+import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.amitshekhar.DebugDB;
@@ -31,7 +38,6 @@ import duti.com.pushmyorder.util.NotificationUtils;
 public class MainActivity extends BaseActivity<Data> {
 
     private BroadcastReceiver mRegistrationBroadcastReceiver;
-    private TextView txtRegId, txtMessage;
 
     LinkAdapter<Data> recordListAdapter;
     ArrayList<Data> visitListArray = new ArrayList<Data>();
@@ -46,11 +52,17 @@ public class MainActivity extends BaseActivity<Data> {
 
         dt.tools.printLog("Db Browser", DebugDB.getAddressLog());
 
+        if(TextUtils.isEmpty(dt.pref.getString("ServerURL"))){
+            setupServer(new onServerSetup() {
+                @Override
+                public void onSetup(boolean setup) {
+                    if(setup)sendTokenToServer();
+                }
+            });
+        }
+
         InitRecycler();
         LoadList(false, 0, "", "");
-
-        txtRegId = (TextView) findViewById(R.id.txt_reg_id);
-        txtMessage = (TextView) findViewById(R.id.txt_push_message);
 
         mRegistrationBroadcastReceiver = new BroadcastReceiver() {
             @Override
@@ -62,7 +74,7 @@ public class MainActivity extends BaseActivity<Data> {
                     // now subscribe to `global` topic to receive app wide notifications
                     FirebaseMessaging.getInstance().subscribeToTopic(Constants.TOPIC_GLOBAL);
 
-                    displayFirebaseRegId();
+                    sendTokenToServer();
 
                 } else if (intent.getAction().equals(Constants.PUSH_NOTIFICATION)) {
                     // new push notification is received
@@ -75,18 +87,18 @@ public class MainActivity extends BaseActivity<Data> {
                             LoadList(false, 0, "","");
                         }
                     });
-                    Toast.makeText(getApplicationContext(), "Push notification: " + message, Toast.LENGTH_LONG).show();
-                    txtMessage.setText(message);
+                    Toast.makeText(getApplicationContext(), "Push notification: " + title, Toast.LENGTH_LONG).show();
                 }
             }
         };
 
-        displayFirebaseRegId();
+    }
 
+    private void sendTokenToServer() {
         if(dt.droidNet.hasConnection()){
             if(!dt.pref.getBoolean("FcmTokenSent")){
                 dt.alert.showProgress(dt.gStr(R.string.getting_ready));
-                new RefreshToken(dt).sendRegistrationToServer(displayFirebaseRegId(), new RefreshToken.onTokenSentListener() {
+                new RefreshToken(dt).sendRegistrationToServer(dt.pref.getString("FcmToken"), new RefreshToken.onTokenSentListener() {
                     @Override
                     public void onTokenSent(boolean success, String message, String token) {
                         dt.alert.hideDialog(dt.alert.progress);
@@ -101,7 +113,58 @@ public class MainActivity extends BaseActivity<Data> {
                 });
             }
         }
+    }
 
+    public interface onServerSetup {
+        void onSetup(boolean setup);
+    }
+
+    Dialog mDialog;
+
+    public void setupServer(onServerSetup listener){
+        final onServerSetup serverSetup = listener;
+        View dialogView = View.inflate(dt.c, R.layout.dialog_popup_server_url, null);
+        AlertDialog.Builder builder = new AlertDialog.Builder(dt.c);
+        builder.setTitle("")
+                .setView(dialogView)
+                .setCancelable(true);
+
+        mDialog = builder.create();
+        mDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        mDialog.show();
+
+        final EditText serverUrlEt = (EditText) dialogView.findViewById(R.id.ServerUrl);
+
+        Button cancelButton = (Button) dialogView.findViewById(R.id.mCancel);
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDialog.dismiss();
+                if(TextUtils.isEmpty(dt.pref.getString("ServerURL"))) {
+                    dt.msg("Server Setup Failure");
+                    dt.alert.showWarningWithOneButton("Server Setup Failure");
+                    serverSetup.onSetup(false);
+                }
+                else {
+                    serverSetup.onSetup(true);
+                }
+            }
+        });
+
+        Button saveButton = (Button) dialogView.findViewById(R.id.mSaveServer);
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String serverUrl = serverUrlEt.getText().toString().trim();
+                if ((!TextUtils.isEmpty(serverUrl))) {
+                    mDialog.dismiss();
+                    String completeUrl = "http://"+serverUrl+"/pushmyorder/";
+                    dt.pref.set("ServerURL", completeUrl);
+                    serverSetup.onSetup(true);
+                } else dt.msg("Enter Server URL !! ");
+            }
+        });
     }
 
     public void InitRecycler() {
@@ -139,17 +202,6 @@ public class MainActivity extends BaseActivity<Data> {
     @Override
     protected int onOptionsMenuInflate() {
         return 0;
-    }
-
-    // Fetches reg id from shared preferences
-    // and displays on the screen
-    private String displayFirebaseRegId() {
-        String regId = dt.pref.getString("FcmToken");
-        if (!TextUtils.isEmpty(regId))
-            txtRegId.setText("Firebase Reg Id: " + regId);
-        else
-            txtRegId.setText("Firebase Reg Id is not received yet!");
-        return regId;
     }
 
     @Override

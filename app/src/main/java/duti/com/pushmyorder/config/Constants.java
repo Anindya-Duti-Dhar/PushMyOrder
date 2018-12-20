@@ -2,7 +2,7 @@ package duti.com.pushmyorder.config;
 
 public class Constants {
 
-    public static final String BASE_URL = "http://192.168.0.100/pushmyorder/";
+    public static final String BASE_URL = "http://10.10.0.245/pushmyorder/"; // "http://192.168.0.100/pushmyorder/";
     public static final int DATABASE_VERSION = 1;
     public static final String DB_NAME = "pushMyOrderPref";
     public static final String PREF_NAME = "pushMyOrderPref";
