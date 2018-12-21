@@ -55,6 +55,8 @@ dependencies {
     compile 'com.evernote:android-job:1.2.6'
     // material android M permission
     compile 'gun0912.ted:tedpermission:2.2.0'
+    // material web view
+    compile 'com.thefinestartist:finestwebview:1.2.7'
     // see database in browser
     debugImplementation 'com.amitshekhar.android:debug-db:1.0.3'
 

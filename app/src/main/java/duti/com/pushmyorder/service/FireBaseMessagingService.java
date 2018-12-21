@@ -11,7 +11,7 @@ import com.google.firebase.messaging.RemoteMessage;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import duti.com.pushmyorder.MainActivity;
+import duti.com.pushmyorder.activity.MainActivity;
 import duti.com.pushmyorder.config.Constants;
 import duti.com.pushmyorder.library.DroidTool;
 import duti.com.pushmyorder.library.Repository;

@@ -1,4 +1,4 @@
-package duti.com.pushmyorder;
+package duti.com.pushmyorder.activity;
 
 import android.app.Dialog;
 import android.content.BroadcastReceiver;
@@ -21,10 +21,12 @@ import android.widget.Toast;
 
 import com.amitshekhar.DebugDB;
 import com.google.firebase.messaging.FirebaseMessaging;
+import com.thefinestartist.finestwebview.FinestWebView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import duti.com.pushmyorder.R;
 import duti.com.pushmyorder.api.RefreshToken;
 import duti.com.pushmyorder.config.Constants;
 import duti.com.pushmyorder.library.BaseActivity;
@@ -175,6 +177,8 @@ public class MainActivity extends BaseActivity<Data> {
             @Override
             public void onItemRowClick(Object o, int pos) {
                 dt.msg("Clicked Item");
+                new FinestWebView.Builder(dt.c).titleDefault("The Finest Artist")
+                        .show("http://thefinestartist.com");
             }
         });
 

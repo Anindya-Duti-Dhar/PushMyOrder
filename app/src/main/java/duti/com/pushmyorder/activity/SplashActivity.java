@@ -1,9 +1,12 @@
-package duti.com.pushmyorder;
+package duti.com.pushmyorder.activity;
 
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.thefinestartist.finestwebview.FinestWebView;
+
+import duti.com.pushmyorder.R;
 import duti.com.pushmyorder.library.BaseActivity;
 import duti.com.pushmyorder.library.DatabaseHandler;
 import duti.com.pushmyorder.library.Threading;
