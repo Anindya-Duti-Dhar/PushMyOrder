@@ -80,7 +80,12 @@ public class FireBaseMessagingService extends FirebaseMessagingService {
             String imageUrl = data.getString("image").replace("\\", "");
             String timestamp = data.getString("timestamp");
             JSONObject payload = data.getJSONObject("payload");
-            String webLink = payload.getString("webLink").replace("\\", "");
+            String webLink = "";
+            try {
+                webLink = payload.getString("webLink").replace("\\", "");
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
 
             Data masterData = new Data();
             masterData.setTitle(title);
