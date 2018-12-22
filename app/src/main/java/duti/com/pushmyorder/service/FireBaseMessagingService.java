@@ -77,18 +77,21 @@ public class FireBaseMessagingService extends FirebaseMessagingService {
             JSONObject data = json.getJSONObject("data");
             String title = data.getString("title");
             String message = data.getString("message");
-            String imageUrl = data.getString("image");
+            String imageUrl = data.getString("image").replace("\\", "");
             String timestamp = data.getString("timestamp");
             JSONObject payload = data.getJSONObject("payload");
+            String webLink = payload.getString("webLink").replace("\\", "");
 
             Data masterData = new Data();
             masterData.setTitle(title);
             masterData.setMessage(message);
             masterData.setImage(imageUrl);
             masterData.setTimestamp(timestamp);
-            repoMaster.add(masterData);
+            String masterId = repoMaster.add(masterData);
 
             Payload detailsData = new Payload();
+            detailsData.setRecordId(Long.parseLong(masterId));
+            detailsData.setWebLink(webLink);
             detailsData.setItem(payload.getString("item"));
             detailsData.setQuantity(payload.getString("quantity"));
             repoDetails.add(detailsData);
@@ -96,8 +99,9 @@ public class FireBaseMessagingService extends FirebaseMessagingService {
             if (!NotificationUtils.isAppIsInBackground(getApplicationContext())) {
                 // app is in foreground, broadcast the push message
                 Intent pushNotification = new Intent(Constants.PUSH_NOTIFICATION);
-                pushNotification.putExtra("title", title);
+                pushNotification.putExtra("webLink", webLink);
                 pushNotification.putExtra("message", message);
+                pushNotification.putExtra("title", title);
                 LocalBroadcastManager.getInstance(this).sendBroadcast(pushNotification);
 
                 // play notification sound
@@ -106,6 +110,7 @@ public class FireBaseMessagingService extends FirebaseMessagingService {
             } else {
                 // app is in background, show the notification in notification tray
                 Intent resultIntent = new Intent(getApplicationContext(), MainActivity.class);
+                resultIntent.putExtra("webLink", webLink);
                 resultIntent.putExtra("title", title);
                 resultIntent.putExtra("message", message);
 

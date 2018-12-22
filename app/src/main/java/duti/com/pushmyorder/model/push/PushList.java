@@ -9,6 +9,7 @@ public class PushList {
     String title;
     String message;
     String timestamp;
+    String webLink;
     String item;
     String quantity;
 
@@ -58,6 +59,14 @@ public class PushList {
 
     public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public String getWebLink() {
+        return webLink;
+    }
+
+    public void setWebLink(String webLink) {
+        this.webLink = webLink;
     }
 
     public String getItem() {

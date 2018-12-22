@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_geo"
-        android:icon="@drawable/ic_action_gps_fixed"
+        android:id="@+id/action_logout"
+        android:icon="@android:drawable/ic_lock_power_off"
         android:orderInCategory="100"
-        android:title="@string/app_name"
+        android:title="Logout"
         app:showAsAction="always" />
 
 </menu>

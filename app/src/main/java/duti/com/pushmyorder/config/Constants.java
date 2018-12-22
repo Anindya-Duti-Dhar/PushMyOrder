@@ -11,12 +11,13 @@ public class Constants {
     public static final int mSyncedValue = 1;
     public static final String mStatus = "Status";
     public static final String mRecordId = "RecordId";
+    public static final String mRowId = "RowId";
     public static final String mServerRecordId = "ServerRecordId";
     public static final int mLocalPageSize = 10;
     public static final String mFirstTimeInstallation = "FirstTimeInstallation";
     public static final String mUserId = "UserId";
 
-    public static final String LOG = "PushMyOrder";
+    public static final String LOG = "duti";
 
     public static final String ADMIN_EMAIL = "admin@pushmyorder.org";
 

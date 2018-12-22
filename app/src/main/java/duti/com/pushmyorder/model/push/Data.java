@@ -4,10 +4,10 @@ public class Data {
 
     long RecordId;
     String image;
-    Payload payload;
     String title;
     String message;
     String timestamp;
+    Payload payload;
 
     public long getRecordId() {
         return RecordId;
@@ -23,14 +23,6 @@ public class Data {
 
     public void setImage(String image) {
         this.image = image;
-    }
-
-    public Payload getPayload() {
-        return payload;
-    }
-
-    public void setPayload(Payload payload) {
-        this.payload = payload;
     }
 
     public String getTitle() {
@@ -57,15 +49,23 @@ public class Data {
         this.timestamp = timestamp;
     }
 
+    public Payload getPayload() {
+        return payload;
+    }
+
+    public void setPayload(Payload payload) {
+        this.payload = payload;
+    }
+
     @Override
     public String toString() {
         return "Data{" +
                 "RecordId=" + RecordId +
                 ", image='" + image + '\'' +
-                ", payload=" + payload +
                 ", title='" + title + '\'' +
                 ", message='" + message + '\'' +
                 ", timestamp='" + timestamp + '\'' +
+                ", payload=" + payload +
                 '}';
     }
 }

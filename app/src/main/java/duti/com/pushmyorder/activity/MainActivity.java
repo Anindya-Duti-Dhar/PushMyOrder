@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AlertDialog;
@@ -17,7 +18,6 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.amitshekhar.DebugDB;
 import com.google.firebase.messaging.FirebaseMessaging;
@@ -34,16 +34,16 @@ import duti.com.pushmyorder.library.ItemList;
 import duti.com.pushmyorder.library.LinkAdapter;
 import duti.com.pushmyorder.library.Repository;
 import duti.com.pushmyorder.library.SweetAlert;
-import duti.com.pushmyorder.model.push.Data;
+import duti.com.pushmyorder.model.push.PushList;
 import duti.com.pushmyorder.util.NotificationUtils;
 
-public class MainActivity extends BaseActivity<Data> {
+public class MainActivity extends BaseActivity<PushList> {
 
     private BroadcastReceiver mRegistrationBroadcastReceiver;
 
-    LinkAdapter<Data> recordListAdapter;
-    ArrayList<Data> visitListArray = new ArrayList<Data>();
-    Repository<Data> repo = new Repository<Data>(this, new Data());
+    LinkAdapter<PushList> recordListAdapter;
+    ArrayList<PushList> visitListArray = new ArrayList<PushList>();
+    Repository<PushList> repoPush = new Repository<PushList>(this, new PushList());
 
 
     @Override
@@ -54,17 +54,17 @@ public class MainActivity extends BaseActivity<Data> {
 
         dt.tools.printLog("Db Browser", DebugDB.getAddressLog());
 
-        if(TextUtils.isEmpty(dt.pref.getString("ServerURL"))){
+        if (TextUtils.isEmpty(dt.pref.getString("ServerURL"))) {
             setupServer(new onServerSetup() {
                 @Override
                 public void onSetup(boolean setup) {
-                    if(setup)sendTokenToServer();
+                    if (setup) sendTokenToServer();
                 }
             });
         }
 
         InitRecycler();
-        LoadList(false, 0, "", "");
+        loadList();
 
         mRegistrationBroadcastReceiver = new BroadcastReceiver() {
             @Override
@@ -80,16 +80,19 @@ public class MainActivity extends BaseActivity<Data> {
 
                 } else if (intent.getAction().equals(Constants.PUSH_NOTIFICATION)) {
                     // new push notification is received
+                    final String webLink = intent.getStringExtra("webLink");
                     String title = intent.getStringExtra("title");
                     String message = intent.getStringExtra("message");
-                    dt.alert.showSuccess(title, message, dt.gStr(R.string.thanks));
+                    dt.alert.showGeneral(title, message + "\n\n" + "Want to Confirm Order?", dt.gStr(R.string.ok), dt.gStr(R.string.cancel));
                     dt.alert.setAlertListener(new SweetAlert.AlertListener() {
                         @Override
                         public void onAlertClick(boolean isCancel) {
-                            LoadList(false, 0, "","");
+                            if (!isCancel) {
+                                new FinestWebView.Builder(dt.c).titleDefault("Order And Eat")
+                                        .show(webLink);
+                            } else loadList();
                         }
                     });
-                    Toast.makeText(getApplicationContext(), "Push notification: " + title, Toast.LENGTH_LONG).show();
                 }
             }
         };
@@ -97,18 +100,17 @@ public class MainActivity extends BaseActivity<Data> {
     }
 
     private void sendTokenToServer() {
-        if(dt.droidNet.hasConnection()){
-            if(!dt.pref.getBoolean("FcmTokenSent")){
+        if (dt.droidNet.hasConnection()) {
+            if (!dt.pref.getBoolean("FcmTokenSent")) {
                 dt.alert.showProgress(dt.gStr(R.string.getting_ready));
                 new RefreshToken(dt).sendRegistrationToServer(dt.pref.getString("FcmToken"), new RefreshToken.onTokenSentListener() {
                     @Override
                     public void onTokenSent(boolean success, String message, String token) {
                         dt.alert.hideDialog(dt.alert.progress);
                         dt.pref.set("FcmToken", token);
-                        if(success){
+                        if (success) {
                             dt.pref.set("FcmTokenSent", true);
-                        }
-                        else {
+                        } else {
                             dt.pref.set("FcmTokenSent", false);
                         }
                     }
@@ -123,7 +125,7 @@ public class MainActivity extends BaseActivity<Data> {
 
     Dialog mDialog;
 
-    public void setupServer(onServerSetup listener){
+    public void setupServer(onServerSetup listener) {
         final onServerSetup serverSetup = listener;
         View dialogView = View.inflate(dt.c, R.layout.dialog_popup_server_url, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(dt.c);
@@ -143,12 +145,11 @@ public class MainActivity extends BaseActivity<Data> {
             @Override
             public void onClick(View v) {
                 mDialog.dismiss();
-                if(TextUtils.isEmpty(dt.pref.getString("ServerURL"))) {
+                if (TextUtils.isEmpty(dt.pref.getString("ServerURL"))) {
                     dt.msg("Server Setup Failure");
                     dt.alert.showWarningWithOneButton("Server Setup Failure");
                     serverSetup.onSetup(false);
-                }
-                else {
+                } else {
                     serverSetup.onSetup(true);
                 }
             }
@@ -161,7 +162,7 @@ public class MainActivity extends BaseActivity<Data> {
                 String serverUrl = serverUrlEt.getText().toString().trim();
                 if ((!TextUtils.isEmpty(serverUrl))) {
                     mDialog.dismiss();
-                    String completeUrl = "http://"+serverUrl+"/pushmyorder/";
+                    String completeUrl = "http://" + serverUrl + "/pushmyorder/";
                     dt.pref.set("ServerURL", completeUrl);
                     serverSetup.onSetup(true);
                 } else dt.msg("Enter Server URL !! ");
@@ -176,36 +177,41 @@ public class MainActivity extends BaseActivity<Data> {
         dt.ui.listView.itemList.setRecyclerViewItemClickListener(new ItemList.onRecyclerViewItemClick() {
             @Override
             public void onItemRowClick(Object o, int pos) {
-                dt.msg("Clicked Item");
-                new FinestWebView.Builder(dt.c).titleDefault("The Finest Artist")
-                        .show("http://thefinestartist.com");
+                final PushList push = (PushList) o;
+                dt.alert.showWarning("Order Confirmation", "Want to Confirm Order?");
+                dt.alert.setAlertListener(new SweetAlert.AlertListener() {
+                    @Override
+                    public void onAlertClick(boolean isCancel) {
+                        if (!isCancel) {
+                            new FinestWebView.Builder(dt.c).titleDefault("Order And Eat")
+                                    .show(push.getWebLink());
+                        }
+                    }
+                });
             }
         });
 
         recordListAdapter = dt.ui.listView.itemList.adapter;
     }
 
-    private void LoadList(boolean isLoadMore, long recordId, String searchKey, String searchValue) {
-        Data[] visitList = (Data[]) repo.getAll(queryStatement(isLoadMore, searchKey, searchValue, recordId), Data[].class);
-        if (isLoadMore) visitListArray.addAll(new ArrayList<>(Arrays.asList(visitList)));
-        else {visitListArray.clear();
-            visitListArray = new ArrayList<>(Arrays.asList(visitList));
-            dt.ui.listView.itemList.showHideNoRecordMessage(mContext, visitListArray, R.id.mRecylerView, R.id.mNoDataMessage);}
-        if (visitListArray.size() > 0) {
-            recordListAdapter.setItems(visitListArray);
-            recordListAdapter.notifyDataSetChanged();
-        }
-        isLoading = false;
+    private void loadList(){
+        new GetRepo().execute();
     }
 
     @Override
     protected void onOptionsItemClick(MenuItem item) {
-
+        switch (item.getItemId()) {
+            case R.id.action_logout:
+                exit();
+                break;
+            default:
+                break;
+        }
     }
 
     @Override
     protected int onOptionsMenuInflate() {
-        return 0;
+        return R.menu.main_page_menu;
     }
 
     @Override
@@ -233,7 +239,46 @@ public class MainActivity extends BaseActivity<Data> {
 
     @Override
     public void onBackPressed() {
-        finish();
+        exit();
+    }
+
+    private void exit(){
+        dt.alert.showWarning("Want to Exit?");
+        dt.alert.setAlertListener(new SweetAlert.AlertListener() {
+            @Override
+            public void onAlertClick(boolean isCancel) {
+                if(!isCancel)finish();
+            }
+        });
+    }
+
+    public class GetRepo extends AsyncTask<String, Void, String> {
+
+        @Override
+        protected void onPreExecute() {
+            dt.alert.showProgress(dt.gStr(R.string.getting_ready));
+        }
+
+        @Override
+        protected String doInBackground(String... strings) {
+            repoPush.addInCustomTableMap("PushList", "Data");
+            PushList[] visitList = (PushList[]) repoPush.getWithTableName("inner join Payload on Data.RecordId = Payload.RecordId and Data.RecordId > 0 order by Data.RecordId desc", "", PushList[].class);
+            visitListArray.clear();
+            visitListArray = new ArrayList<>(Arrays.asList(visitList));
+            return "done";
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            dt.alert.hideDialog(dt.alert.progress);
+            dt.ui.listView.itemList.showHideNoRecordMessage(mContext, visitListArray, R.id.mRecylerView, R.id.mNoDataMessage);
+            if (visitListArray.size() > 0) {
+                recordListAdapter.setItems(visitListArray);
+                recordListAdapter.notifyDataSetChanged();
+            }
+            isLoading = false;
+        }
+
     }
 
 }
