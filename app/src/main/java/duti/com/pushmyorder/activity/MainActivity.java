@@ -19,7 +19,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-import com.amitshekhar.DebugDB;
+//import com.amitshekhar.DebugDB;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.thefinestartist.finestwebview.FinestWebView;
 
@@ -52,7 +52,7 @@ public class MainActivity extends BaseActivity<PushList> {
         setContentView(R.layout.activity_home);
         super.register(this, R.string.app_name);
 
-        dt.tools.printLog("Db Browser", DebugDB.getAddressLog());
+        //dt.tools.printLog("Db Browser", DebugDB.getAddressLog());
 
         if (TextUtils.isEmpty(dt.pref.getString("ServerURL"))) {
             setupServer(new onServerSetup() {
@@ -87,10 +87,11 @@ public class MainActivity extends BaseActivity<PushList> {
                     dt.alert.setAlertListener(new SweetAlert.AlertListener() {
                         @Override
                         public void onAlertClick(boolean isCancel) {
+                            loadList();
                             if (!isCancel) {
                                 new FinestWebView.Builder(dt.c).titleDefault("Order And Eat")
                                         .show(webLink);
-                            } else loadList();
+                            }
                         }
                     });
                 }

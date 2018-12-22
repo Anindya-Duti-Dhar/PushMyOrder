@@ -12,6 +12,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import duti.com.pushmyorder.activity.MainActivity;
+import duti.com.pushmyorder.activity.SplashActivity;
 import duti.com.pushmyorder.config.Constants;
 import duti.com.pushmyorder.library.DroidTool;
 import duti.com.pushmyorder.library.Repository;
@@ -114,7 +115,7 @@ public class FireBaseMessagingService extends FirebaseMessagingService {
                 notificationUtils.playNotificationSound();
             } else {
                 // app is in background, show the notification in notification tray
-                Intent resultIntent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent resultIntent = new Intent(getApplicationContext(), SplashActivity.class);
                 resultIntent.putExtra("webLink", webLink);
                 resultIntent.putExtra("title", title);
                 resultIntent.putExtra("message", message);
