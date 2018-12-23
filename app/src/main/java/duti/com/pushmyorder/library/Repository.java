@@ -48,8 +48,11 @@ public class Repository<T> extends SQLiteOpenHelper implements IRepository<T> {
         mContext = context;
         this.object = object;
 
-        mTableName = object.getClass().getName().toString().replace(object.getClass()
-                .getPackage().toString().replace("package ", ""), "").replace(".", "");
+        /*mTableName = object.getClass().getName().toString().replace(object.getClass()
+                .getPackage().toString().replace("package ", ""), "").replace(".", "");*/
+
+        /*Fixing for Oreo Version with backward compatibility*/
+        mTableName = object.getClass().getSimpleName();
     }
 
     public String getTableName() {
