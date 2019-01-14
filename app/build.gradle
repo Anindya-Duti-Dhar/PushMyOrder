@@ -58,7 +58,7 @@ dependencies {
     // material web view
     compile 'com.thefinestartist:finestwebview:1.2.7'
     // see database in browser
-    //debugImplementation 'com.amitshekhar.android:debug-db:1.0.3'
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.3'
 
     //fire base
     compile 'com.google.firebase:firebase-messaging:9.6.0'

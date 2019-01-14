@@ -17,7 +17,7 @@ public class Constants {
     public static final String mFirstTimeInstallation = "FirstTimeInstallation";
     public static final String mUserId = "UserId";
 
-    public static final String LOG = "duti";
+    public static final String LOG = "food";
 
     public static final String ADMIN_EMAIL = "admin@pushmyorder.org";
 
