@@ -53,6 +53,7 @@ public class MainActivity extends BaseActivity<PushList> {
         super.register(this, R.string.app_name);
 
         dt.tools.printLog("Db Browser", DebugDB.getAddressLog());
+        dt.tools.printLog("FCM Token in Pref", dt.pref.getString("FcmToken"));
 
         if (TextUtils.isEmpty(dt.pref.getString("ServerURL"))) {
             setupServer(new onServerSetup() {
